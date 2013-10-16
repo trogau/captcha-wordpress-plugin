@@ -1,0 +1,427 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: captcha\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-06 15:11+0300\n"
+"PO-Revision-Date: 2013-09-06 15:11+0300\n"
+"Last-Translator: \n"
+"Language-Team: bestwebsoft.com <plugin@bestwebsoft.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fi_FI\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: captcha.php:32
+#: captcha.php:215
+#, fuzzy
+msgid "Captcha Settings"
+msgstr "Captcha asetukset"
+
+#: captcha.php:32
+msgid "Captcha"
+msgstr "Captcha"
+
+#: captcha.php:41
+msgid "Login form"
+msgstr "Kirjautumislomake"
+
+#: captcha.php:42
+#: captcha.php:253
+#, fuzzy
+msgid "Registration form"
+msgstr "Rekisteröintilomake"
+
+#: captcha.php:42
+msgid "Register form"
+msgstr "Rekisteröintilomake"
+
+#: captcha.php:43
+#, fuzzy
+msgid "Reset Password form"
+msgstr "Salasana hukassa"
+
+#: captcha.php:43
+msgid "Lost password form"
+msgstr "Salasana hukassa"
+
+#: captcha.php:44
+#: captcha.php:254
+msgid "Comments form"
+msgstr "Kommenttilomake"
+
+#: captcha.php:45
+msgid "Hide CAPTCHA for registered users"
+msgstr "Piilota CAPTCHA rekisteröityneiltä käyttäjiltä"
+
+#: captcha.php:50
+msgid "Plus (&#43;)"
+msgstr "Plus (&#43;)"
+
+#: captcha.php:50
+msgid "Plus"
+msgstr "Plus (&#43;)"
+
+#: captcha.php:51
+msgid "Minus (&minus;)"
+msgstr "Miinus (&minus;)"
+
+#: captcha.php:51
+msgid "Minus"
+msgstr "Miinus"
+
+#: captcha.php:52
+#, fuzzy
+msgid "Multiplication (&times;)"
+msgstr "Kertaan (&times;)"
+
+#: captcha.php:52
+#, fuzzy
+msgid "Multiply"
+msgstr "Kertaan (&times;)"
+
+#: captcha.php:57
+msgid "Numbers"
+msgstr "Numerot"
+
+#: captcha.php:58
+msgid "Words"
+msgstr "Sanat"
+
+#: captcha.php:148
+#: captcha.php:159
+msgid "Settings"
+msgstr "Asetukset"
+
+#: captcha.php:160
+msgid "FAQ"
+msgstr "UKK"
+
+#: captcha.php:161
+msgid "Support"
+msgstr "Tuki"
+
+#: captcha.php:204
+#, fuzzy
+msgid "Please select one item in the block Arithmetic and Complexity for CAPTCHA"
+msgstr "Valitse yksi kohta laskutavoista ja CAPTCHAn vaikeustaso"
+
+#: captcha.php:208
+msgid "Options saved."
+msgstr "Asetukset tallennettu."
+
+#: captcha.php:221
+#: captcha.php:250
+#, fuzzy
+msgid "Enable CAPTCHA for:"
+msgstr "CAPTCHAn käyttö:"
+
+#: captcha.php:235
+#: captcha.php:237
+#: captcha.php:240
+msgid "Contact form"
+msgstr "Yhteydenottolomake"
+
+#: captcha.php:235
+#: captcha.php:237
+#: captcha.php:240
+msgid "powered by"
+msgstr ""
+
+#: captcha.php:237
+msgid "Activate contact form"
+msgstr "Aktivoi yhteydenottolomake"
+
+#: captcha.php:240
+msgid "Download contact form"
+msgstr "Lataa yhteydenottolomake"
+
+#: captcha.php:242
+#, fuzzy
+msgid "If you would like to customize this plugin for a custom form, please see"
+msgstr "Jos haluat muokata tätä pluginia johonkin muuhun lomakkeeseen, ota yhteyttä meihin sähköpostitse <a href=\"Mailto:plugin@bestwebsoft.com\">plugin@bestwebsoft.com</a> tai täyttämällä yhteydenottolomake sivuillamme."
+
+#: captcha.php:255
+msgid "\"Create a Group\" form"
+msgstr ""
+
+#: captcha.php:260
+msgid "This functionality is available in the Pro version of the plugin. For more details, please follow the link"
+msgstr ""
+
+#: captcha.php:267
+#, fuzzy
+msgid "Title for CAPTCHA in the form"
+msgstr "Lomakekentän CAPTCHAn otsikko"
+
+#: captcha.php:271
+msgid "Arithmetic actions for CAPTCHA"
+msgstr "CAPTCHAssa käytettävät laskutoimitukset"
+
+#: captcha.php:280
+msgid "CAPTCHA complexity level"
+msgstr ""
+
+#: captcha.php:290
+msgid "Save Changes"
+msgstr "Tallenna muutokset"
+
+#: captcha.php:335
+#: captcha.php:341
+#: captcha.php:515
+#: captcha.php:522
+#: captcha.php:534
+#: captcha.php:541
+msgid "ERROR"
+msgstr "VIRHE"
+
+#: captcha.php:335
+#: captcha.php:358
+#: captcha.php:479
+#: captcha.php:515
+#: captcha.php:534
+#: captcha.php:560
+msgid "Please fill the form."
+msgstr ""
+
+#: captcha.php:341
+#: captcha.php:369
+#: captcha.php:522
+#: captcha.php:541
+#, fuzzy
+msgid "Please enter a valid CAPTCHA value."
+msgstr "Syötä laskun tulos"
+
+#: captcha.php:485
+#: captcha.php:567
+#, fuzzy
+msgid "Error: You have entered an incorrect CAPTCHA value. Click the BACK button on your browser, and try again."
+msgstr "Virhe: Syöttämäsi CAPTCHA-laskutoimitus oli väärin. Palaa takaisin painamalla selaimesi Takaisin-painiketta ja yritä uudelleen."
+
+#: captcha.php:579
+#: captcha.php:812
+msgid "zero"
+msgstr "nolla"
+
+#: captcha.php:580
+#: captcha.php:813
+#: captcha.php:1026
+msgid "one"
+msgstr "yksi"
+
+#: captcha.php:581
+#: captcha.php:814
+msgid "two"
+msgstr "kaksi"
+
+#: captcha.php:582
+#: captcha.php:815
+msgid "three"
+msgstr "kolme"
+
+#: captcha.php:583
+#: captcha.php:816
+msgid "four"
+msgstr "neljä"
+
+#: captcha.php:584
+#: captcha.php:817
+msgid "five"
+msgstr "viisi"
+
+#: captcha.php:585
+#: captcha.php:818
+#: captcha.php:1026
+msgid "six"
+msgstr "kuusi"
+
+#: captcha.php:586
+#: captcha.php:819
+#: captcha.php:1014
+#: captcha.php:1020
+msgid "seven"
+msgstr "seitsemän"
+
+#: captcha.php:587
+#: captcha.php:820
+#: captcha.php:1017
+msgid "eight"
+msgstr "kahdeksan"
+
+#: captcha.php:588
+#: captcha.php:821
+msgid "nine"
+msgstr "yhdeksän"
+
+#: captcha.php:591
+#: captcha.php:824
+msgid "eleven"
+msgstr "yksitoista"
+
+#: captcha.php:592
+#: captcha.php:825
+msgid "twelve"
+msgstr "kaksitoista"
+
+#: captcha.php:593
+#: captcha.php:826
+msgid "thirteen"
+msgstr "kolmetoista"
+
+#: captcha.php:594
+#: captcha.php:827
+msgid "fourteen"
+msgstr "neljätoista"
+
+#: captcha.php:595
+#: captcha.php:828
+msgid "fifteen"
+msgstr "viisitoista"
+
+#: captcha.php:596
+#: captcha.php:829
+msgid "sixteen"
+msgstr "kuusitoista"
+
+#: captcha.php:597
+#: captcha.php:830
+msgid "seventeen"
+msgstr "seitsemäntoista"
+
+#: captcha.php:598
+#: captcha.php:831
+msgid "eighteen"
+msgstr "kahdeksantoista"
+
+#: captcha.php:599
+#: captcha.php:832
+msgid "nineteen"
+msgstr "yhdeksäntoista"
+
+#: captcha.php:602
+#: captcha.php:835
+msgid "ten"
+msgstr "kymmenen"
+
+#: captcha.php:603
+#: captcha.php:836
+msgid "twenty"
+msgstr "kaksikymmentä"
+
+#: captcha.php:604
+#: captcha.php:837
+msgid "thirty"
+msgstr "kolmekymmentä"
+
+#: captcha.php:605
+#: captcha.php:838
+msgid "forty"
+msgstr "neljäkymmentä"
+
+#: captcha.php:606
+#: captcha.php:839
+msgid "fifty"
+msgstr "viisikymmentä"
+
+#: captcha.php:607
+#: captcha.php:840
+msgid "sixty"
+msgstr "kuusikymmentä"
+
+#: captcha.php:608
+#: captcha.php:841
+msgid "seventy"
+msgstr "seitsemänkymmentä"
+
+#: captcha.php:609
+#: captcha.php:842
+msgid "eighty"
+msgstr "kahdeksankymmentä"
+
+#: captcha.php:610
+#: captcha.php:843
+msgid "ninety"
+msgstr "yhdeksänkymmentä"
+
+#: captcha.php:697
+#: captcha.php:930
+msgid "and"
+msgstr "ja"
+
+#: captcha.php:717
+#, fuzzy
+msgid "Encryption password is not set"
+msgstr "Salasanan dekoodaus ei ole asetettu käyttöön"
+
+#: captcha.php:737
+#, fuzzy
+msgid "Decryption password is not set"
+msgstr "Salasanan dekoodaus ei ole asetettu käyttöön"
+
+#, fuzzy
+#~ msgid "Please enter a valid email address."
+#~ msgstr "Syötä laskun tulos"
+
+#, fuzzy
+#~ msgid "Pro plugins"
+#~ msgstr "BWS Plugins"
+#~ msgid "Activated plugins"
+#~ msgstr "Aktivoidut pluginit"
+#~ msgid "Read more"
+#~ msgstr "Lue lisää"
+#~ msgid "Installed plugins"
+#~ msgstr "Asennetut pluginit"
+#~ msgid "Recommended plugins"
+#~ msgstr "Suositellut pluginit"
+
+#, fuzzy
+#~ msgid "Free plugins"
+#~ msgstr "Suositellut pluginit"
+#~ msgid "Download"
+#~ msgstr "Lataa"
+#~ msgid "Install %s"
+#~ msgstr "Asenna %s"
+#~ msgid "Install now from wordpress.org"
+#~ msgstr "Asenna nyt sivustolta wordpress.org"
+
+#, fuzzy
+#~ msgid "Active Plugins"
+#~ msgstr "Aktivoidut pluginit"
+
+#, fuzzy
+#~ msgid "Inactive Plugins"
+#~ msgstr "Aktivoidut pluginit"
+
+#, fuzzy
+#~ msgid "Send to support"
+#~ msgstr "Tuki"
+
+#, fuzzy
+#~ msgid "(powered by bestwebsoft.com)"
+#~ msgstr "(power by bestwebsoft.com)"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you have any questions, please contact us via plugin@bestwebsoft.com "
+#~ "or fill in the contact form on our website"
+#~ msgstr ""
+#~ "Jos sinulle tulee kysymyksiä mieleen, ota yhteyttä meihin sähköpostillä "
+#~ "osoitteeseen plugin@bestwebsoft.com tai täytä yhteydenottolomake "
+#~ "sivuillamme."
+#~ msgid "Increase"
+#~ msgstr "Kasvata"
+#~ msgid "Difficulty for CAPTCHA"
+#~ msgstr "CAPTCHAn vaikeusaste"
+#~ msgid "That CAPTCHA was incorrect."
+#~ msgstr "Laskutoimitus ei ollut oikein."
+#~ msgid "The password of encryption is not set"
+#~ msgstr "Salananan enkryptaus ei ole asetettu käyttöön"
+#~ msgid "null"
+#~ msgstr "nolla"
+#~ msgid "Install Now"
+#~ msgstr "Nu installeren"
+

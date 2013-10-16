@@ -1,0 +1,477 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: captcha\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-01 15:34+0300\n"
+"PO-Revision-Date: 2013-10-01 15:36+0300\n"
+"Last-Translator: \n"
+"Language-Team: bestwebsoft.com <plugin@bestwebsoft.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: uk_UA\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: captcha.php:32
+#: captcha.php:216
+msgid "Captcha Settings"
+msgstr "Установки КАПЧА"
+
+#: captcha.php:32
+msgid "Captcha"
+msgstr "КАПЧА"
+
+#: captcha.php:41
+msgid "Login form"
+msgstr "Форма логіну"
+
+#: captcha.php:42
+#: captcha.php:254
+msgid "Registration form"
+msgstr "Форма реєстрації"
+
+#: captcha.php:42
+msgid "Register form"
+msgstr "Форма реєстрації"
+
+#: captcha.php:43
+msgid "Reset Password form"
+msgstr "Форма відновлення пароля"
+
+#: captcha.php:43
+msgid "Lost password form"
+msgstr "Форма відновлення пароля"
+
+#: captcha.php:44
+#: captcha.php:255
+msgid "Comments form"
+msgstr "Форма коментарів"
+
+#: captcha.php:45
+msgid "Hide CAPTCHA for registered users"
+msgstr "Не відображати для зареєстрованих користувачів"
+
+#: captcha.php:50
+msgid "Plus (&#43;)"
+msgstr "Плюс (&#43;)"
+
+#: captcha.php:50
+msgid "Plus"
+msgstr "Плюс (&#43;)"
+
+#: captcha.php:51
+msgid "Minus (&minus;)"
+msgstr "Мінус (&minus;)"
+
+#: captcha.php:51
+msgid "Minus"
+msgstr "Мінус (&minus;)"
+
+#: captcha.php:52
+msgid "Multiplication (&times;)"
+msgstr "Множення (&times;)"
+
+#: captcha.php:52
+msgid "Multiply"
+msgstr "Помножити"
+
+#: captcha.php:57
+msgid "Numbers"
+msgstr "Цифри"
+
+#: captcha.php:58
+msgid "Words"
+msgstr "Слова"
+
+#: captcha.php:149
+#: captcha.php:160
+msgid "Settings"
+msgstr "Установки"
+
+#: captcha.php:161
+msgid "FAQ"
+msgstr "Часті питання (FAQ)"
+
+#: captcha.php:162
+msgid "Support"
+msgstr "Підтримка"
+
+#: captcha.php:205
+msgid "Please select one item in the block Arithmetic and Complexity for CAPTCHA"
+msgstr "Будь ласка, виберіть 1 пункт з блоку Арифметичні дії та Складність для КАПЧА"
+
+#: captcha.php:209
+msgid "Options saved."
+msgstr "Опції збережено"
+
+#: captcha.php:222
+#: captcha.php:251
+msgid "Enable CAPTCHA for:"
+msgstr "Відображати КАПЧА для:"
+
+#: captcha.php:236
+#: captcha.php:238
+#: captcha.php:241
+msgid "Contact form"
+msgstr "Контактна форма"
+
+#: captcha.php:236
+#: captcha.php:238
+#: captcha.php:241
+msgid "powered by"
+msgstr "розроблено за допомогою"
+
+#: captcha.php:238
+msgid "Activate contact form"
+msgstr "Активувати контакну форму"
+
+#: captcha.php:241
+msgid "Download contact form"
+msgstr "Завантажити контактну форму"
+
+#: captcha.php:243
+msgid "If you would like to customize this plugin for a custom form, please see"
+msgstr "Якщо ви хочете пристосувати плагін для окремої власної форми, дивіться"
+
+#: captcha.php:256
+msgid "\"Create a Group\" form"
+msgstr "Форма \"Створити групу\""
+
+#: captcha.php:261
+msgid "This functionality is available in the Pro version of the plugin. For more details, please follow the link"
+msgstr "Даний функціонал доступний у Про версії плагіну. Для додаткової інформації, будь ласка, перейдіть за посилянням"
+
+#: captcha.php:268
+msgid "Title for CAPTCHA in the form"
+msgstr "Заголовок для КАПЧА у формі"
+
+#: captcha.php:272
+msgid "Arithmetic actions for CAPTCHA"
+msgstr "Арифметичні дії для КАПЧА"
+
+#: captcha.php:281
+msgid "CAPTCHA complexity level"
+msgstr "Рівень складності капча"
+
+#: captcha.php:291
+msgid "Save Changes"
+msgstr "Зберегти зміни"
+
+#: captcha.php:336
+#: captcha.php:343
+#: captcha.php:517
+#: captcha.php:525
+#: captcha.php:537
+#: captcha.php:545
+msgid "ERROR"
+msgstr "Помилка"
+
+#: captcha.php:336
+#: captcha.php:360
+#: captcha.php:481
+#: captcha.php:517
+#: captcha.php:537
+#: captcha.php:564
+msgid "Please fill the form."
+msgstr "Будь ласка, заповніть форму"
+
+#: captcha.php:343
+#: captcha.php:371
+#: captcha.php:525
+#: captcha.php:545
+msgid "Please enter a valid CAPTCHA value."
+msgstr "Будь ласка, введіть корректне значення КАПЧА"
+
+#: captcha.php:487
+#: captcha.php:572
+msgid "Error: You have entered an incorrect CAPTCHA value. Click the BACK button on your browser, and try again."
+msgstr "Помилка: Ви ввели КАПЧА неправильно. Натисніть НАЗАД в браузері і спробуйте ще раз."
+
+#: captcha.php:584
+#: captcha.php:820
+msgid "zero"
+msgstr "нуль"
+
+#: captcha.php:585
+#: captcha.php:821
+#: captcha.php:1036
+msgid "one"
+msgstr "один"
+
+#: captcha.php:586
+#: captcha.php:822
+msgid "two"
+msgstr "два"
+
+#: captcha.php:587
+#: captcha.php:823
+msgid "three"
+msgstr "три"
+
+#: captcha.php:588
+#: captcha.php:824
+msgid "four"
+msgstr "чотири"
+
+#: captcha.php:589
+#: captcha.php:825
+msgid "five"
+msgstr "п'ять"
+
+#: captcha.php:590
+#: captcha.php:826
+#: captcha.php:1036
+msgid "six"
+msgstr "шість"
+
+#: captcha.php:591
+#: captcha.php:827
+#: captcha.php:1024
+#: captcha.php:1030
+msgid "seven"
+msgstr "сім"
+
+#: captcha.php:592
+#: captcha.php:828
+#: captcha.php:1027
+msgid "eight"
+msgstr "вісім"
+
+#: captcha.php:593
+#: captcha.php:829
+msgid "nine"
+msgstr "дев'ять"
+
+#: captcha.php:596
+#: captcha.php:832
+msgid "eleven"
+msgstr "одинадцять"
+
+#: captcha.php:597
+#: captcha.php:833
+msgid "twelve"
+msgstr "дванадцять"
+
+#: captcha.php:598
+#: captcha.php:834
+msgid "thirteen"
+msgstr "тринадцять"
+
+#: captcha.php:599
+#: captcha.php:835
+msgid "fourteen"
+msgstr "чотирнадцять"
+
+#: captcha.php:600
+#: captcha.php:836
+msgid "fifteen"
+msgstr "п'ятнадцять"
+
+#: captcha.php:601
+#: captcha.php:837
+msgid "sixteen"
+msgstr "шістнадцять"
+
+#: captcha.php:602
+#: captcha.php:838
+msgid "seventeen"
+msgstr "сімнадцять"
+
+#: captcha.php:603
+#: captcha.php:839
+msgid "eighteen"
+msgstr "вісімнадцять"
+
+#: captcha.php:604
+#: captcha.php:840
+msgid "nineteen"
+msgstr "дев'ятнадцять"
+
+#: captcha.php:607
+#: captcha.php:843
+msgid "ten"
+msgstr "десять"
+
+#: captcha.php:608
+#: captcha.php:844
+msgid "twenty"
+msgstr "двадцять"
+
+#: captcha.php:609
+#: captcha.php:845
+msgid "thirty"
+msgstr "тридцять"
+
+#: captcha.php:610
+#: captcha.php:846
+msgid "forty"
+msgstr "сорок"
+
+#: captcha.php:611
+#: captcha.php:847
+msgid "fifty"
+msgstr "п'ятдесят"
+
+#: captcha.php:612
+#: captcha.php:848
+msgid "sixty"
+msgstr "шістдесят"
+
+#: captcha.php:613
+#: captcha.php:849
+msgid "seventy"
+msgstr "сімдесят"
+
+#: captcha.php:614
+#: captcha.php:850
+msgid "eighty"
+msgstr "вісімдесят"
+
+#: captcha.php:615
+#: captcha.php:851
+msgid "ninety"
+msgstr "дев'яносто"
+
+#: captcha.php:702
+#: captcha.php:938
+msgid "and"
+msgstr "і"
+
+#: captcha.php:724
+msgid "Encryption password is not set"
+msgstr "Пароль для шифрування не встановлено"
+
+#: captcha.php:744
+msgid "Decryption password is not set"
+msgstr "Пароль для дешифрування не встановлено"
+
+#~ msgid "Not set"
+#~ msgstr "Не задано"
+#~ msgid "On"
+#~ msgstr "Увімк."
+#~ msgid "Off"
+#~ msgstr "Вимк."
+#~ msgid "N/A"
+#~ msgstr "Невідомо"
+#~ msgid " Mb"
+#~ msgstr "Mb"
+#~ msgid "Yes"
+#~ msgstr "Так"
+#~ msgid "No"
+#~ msgstr "Ні"
+#~ msgid "Operating System"
+#~ msgstr "Операційна система"
+#~ msgid "Server"
+#~ msgstr "Тип серверу"
+#~ msgid "Memory usage"
+#~ msgstr "Пам’яті використано"
+#~ msgid "MYSQL Version"
+#~ msgstr "Версія MYSQL"
+#~ msgid "SQL Mode"
+#~ msgstr "Режим SQL"
+#~ msgid "PHP Version"
+#~ msgstr "Версія PHP"
+#~ msgid "PHP Safe Mode"
+#~ msgstr "Безпечний режим PHP"
+#~ msgid "PHP Allow URL fopen"
+#~ msgstr "Дозволити відкрити URL"
+#~ msgid "PHP Memory Limit"
+#~ msgstr "Ліміт пам’яті"
+#~ msgid "PHP Max Upload Size"
+#~ msgstr "Макс. розмір файлу, що завантажується"
+#~ msgid "PHP Max Post Size"
+#~ msgstr "Макс. розмір запису"
+#~ msgid "PHP Max Script Execute Time"
+#~ msgstr "Макс. час виконання сценарію"
+#~ msgid "PHP Exif support"
+#~ msgstr "Підтримка PHP Exif"
+#~ msgid "PHP IPTC support"
+#~ msgstr "Підтримка PHP IPTC"
+#~ msgid "PHP XML support"
+#~ msgstr "Підтримка PHP XML"
+#~ msgid "Site URL"
+#~ msgstr "Адреса сайту"
+#~ msgid "Home URL"
+#~ msgstr "Основна адреса сайту"
+#~ msgid "WordPress Version"
+#~ msgstr "Версія WordPress"
+#~ msgid "WordPress DB Version"
+#~ msgstr "Версія бази даних WordPress"
+#~ msgid "Multisite"
+#~ msgstr "Мультиблог"
+#~ msgid "Active Theme"
+#~ msgstr "Тема, що використовується"
+#~ msgid "Please enter a valid email address."
+#~ msgstr "Будь ласка, введіть коректну електронну адресу."
+#~ msgid "Email with system info is sent to "
+#~ msgstr "Електронний лист з системною інформацією відправлено на"
+#~ msgid "Thank you for contacting us."
+#~ msgstr "Дякуємо за те, що звернулись до нас."
+#~ msgid "Sorry, email message could not be delivered."
+#~ msgstr "Вибачте, але ваш електронний лист не може бути відправлено."
+#~ msgid "Pro plugins"
+#~ msgstr "Преміум плагіни"
+#~ msgid "Activated plugins"
+#~ msgstr "Активовані плагіни"
+#~ msgid "Read more"
+#~ msgstr "Детальніше..."
+#~ msgid "Installed plugins"
+#~ msgstr "Установлені плагіни"
+#~ msgid "Recommended plugins"
+#~ msgstr "Рекомендовані до установлення плагіни"
+#~ msgid "Purchase"
+#~ msgstr "Покупка"
+#~ msgid "Free plugins"
+#~ msgstr "Безкоштовні плагіни"
+#~ msgid "Download"
+#~ msgstr "Скачати"
+#~ msgid "Install %s"
+#~ msgstr "Установлено %"
+#~ msgid "Install now from wordpress.org"
+#~ msgstr "Установити з wordpress.org"
+#~ msgid "If you have any questions, please contact us via"
+#~ msgstr ""
+#~ "Якщо у вас виникли питання, будь ласка, зверніться до нас за допомогою"
+#~ msgid "System status"
+#~ msgstr "Системна інформація"
+#~ msgid "Environment"
+#~ msgstr "Системне оточення"
+
+#, fuzzy
+#~ msgid "Active Plugins"
+#~ msgstr "Активовані плагіни"
+#~ msgid "Inactive Plugins"
+#~ msgstr "Неактивовані плагіни"
+#~ msgid "Send to support"
+#~ msgstr "Відправити до служби тех. підтримки"
+#~ msgid "Send to custom email &#187;"
+#~ msgstr "Відправити на електронну адресу &#187;"
+
+#, fuzzy
+#~ msgid "(powered by bestwebsoft.com)"
+#~ msgstr "(розроблено компанією bestwebsoft.com)"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you have any questions, please contact us via plugin@bestwebsoft.com "
+#~ "or fill in the contact form on our website"
+#~ msgstr ""
+#~ "Якщо у вас є якісь питання, звертайтеся на plugin@bestwebsoft.com або "
+#~ "заповніть контактну форму на нашому сайті"
+#~ msgid "Increase"
+#~ msgstr "Помножити"
+#~ msgid "Difficulty for CAPTCHA"
+#~ msgstr "Рівень складності КАПЧА"
+#~ msgid "That CAPTCHA was incorrect."
+#~ msgstr "КАПЧА введена некоректно"
+#~ msgid "The password of encryption is not set"
+#~ msgstr "Пароль для шифрування не встановлено"
+#~ msgid "null"
+#~ msgstr "нуль"
+#~ msgid "Install Now"
+#~ msgstr "Установить сейчас"
+

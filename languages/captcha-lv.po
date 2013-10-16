@@ -1,0 +1,411 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: captcha\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-06 15:11+0300\n"
+"PO-Revision-Date: 2013-09-06 15:11+0300\n"
+"Last-Translator: \n"
+"Language-Team: Juris O <juris.o@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: lv\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.5\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: captcha.php:32
+#: captcha.php:215
+msgid "Captcha Settings"
+msgstr "Captcha iestatījumi"
+
+#: captcha.php:32
+msgid "Captcha"
+msgstr "Captcha"
+
+#: captcha.php:41
+msgid "Login form"
+msgstr "Ieiešanas forma"
+
+#: captcha.php:42
+#: captcha.php:253
+msgid "Registration form"
+msgstr "Reģistrācijas forma"
+
+#: captcha.php:42
+msgid "Register form"
+msgstr "Reģistrācijas forma"
+
+#: captcha.php:43
+msgid "Reset Password form"
+msgstr "Paroles atjaunošanas forma"
+
+#: captcha.php:43
+msgid "Lost password form"
+msgstr "Pazaudētas paroles forma"
+
+#: captcha.php:44
+#: captcha.php:254
+msgid "Comments form"
+msgstr "Komentāru forma"
+
+#: captcha.php:45
+msgid "Hide CAPTCHA for registered users"
+msgstr "Nerādīt CAPTCHA reģistrētiem lietotājiem"
+
+#: captcha.php:50
+msgid "Plus (&#43;)"
+msgstr "Plus (&#43;)"
+
+#: captcha.php:50
+msgid "Plus"
+msgstr "Plus"
+
+#: captcha.php:51
+msgid "Minus (&minus;)"
+msgstr "Mīnus (&minus;)"
+
+#: captcha.php:51
+msgid "Minus"
+msgstr "Mīnus"
+
+#: captcha.php:52
+msgid "Multiplication (&times;)"
+msgstr "Reizināšana (&times;)"
+
+#: captcha.php:52
+msgid "Multiply"
+msgstr "Reizināt"
+
+#: captcha.php:57
+msgid "Numbers"
+msgstr "Cipari"
+
+#: captcha.php:58
+msgid "Words"
+msgstr "Vārdi"
+
+#: captcha.php:148
+#: captcha.php:159
+msgid "Settings"
+msgstr "Iestatījumi"
+
+#: captcha.php:160
+msgid "FAQ"
+msgstr "BUJ"
+
+#: captcha.php:161
+msgid "Support"
+msgstr "Atbalsts"
+
+#: captcha.php:204
+msgid "Please select one item in the block Arithmetic and Complexity for CAPTCHA"
+msgstr "Lūdzu izvēlieties vienu punktu no Aritmētisko darbību un Sarežģītības bloka priekš CAPTCHA"
+
+#: captcha.php:208
+msgid "Options saved."
+msgstr "Iestatījumi saglabāti."
+
+#: captcha.php:221
+#: captcha.php:250
+msgid "Enable CAPTCHA for:"
+msgstr "Attēlot CAPTCHA:"
+
+#: captcha.php:235
+#: captcha.php:237
+#: captcha.php:240
+msgid "Contact form"
+msgstr "Kontaktforma"
+
+#: captcha.php:235
+#: captcha.php:237
+#: captcha.php:240
+msgid "powered by"
+msgstr ""
+
+#: captcha.php:237
+msgid "Activate contact form"
+msgstr "Aktivēt kontaktformu"
+
+#: captcha.php:240
+msgid "Download contact form"
+msgstr "Lejuplādēt kontaktformu"
+
+#: captcha.php:242
+#, fuzzy
+msgid "If you would like to customize this plugin for a custom form, please see"
+msgstr "Ja vēlaties pielāgot spraudni pielāgotai formai, lūdzu kontaktējaties "
+
+#: captcha.php:255
+msgid "\"Create a Group\" form"
+msgstr ""
+
+#: captcha.php:260
+msgid "This functionality is available in the Pro version of the plugin. For more details, please follow the link"
+msgstr ""
+
+#: captcha.php:267
+msgid "Title for CAPTCHA in the form"
+msgstr "CAPTCHA virsraksts formā"
+
+#: captcha.php:271
+msgid "Arithmetic actions for CAPTCHA"
+msgstr "CAPTCHA aritmētiskās darbības"
+
+#: captcha.php:280
+msgid "CAPTCHA complexity level"
+msgstr "CAPTCHA sarežģītības līmenis"
+
+#: captcha.php:290
+msgid "Save Changes"
+msgstr "Saglabāt izmaiņas"
+
+#: captcha.php:335
+#: captcha.php:341
+#: captcha.php:515
+#: captcha.php:522
+#: captcha.php:534
+#: captcha.php:541
+msgid "ERROR"
+msgstr "KĻŪDA"
+
+#: captcha.php:335
+#: captcha.php:358
+#: captcha.php:479
+#: captcha.php:515
+#: captcha.php:534
+#: captcha.php:560
+msgid "Please fill the form."
+msgstr "Lūdzu aizpildiet formu."
+
+#: captcha.php:341
+#: captcha.php:369
+#: captcha.php:522
+#: captcha.php:541
+msgid "Please enter a valid CAPTCHA value."
+msgstr "Lūdzu aizpildiet CAPTCHA"
+
+#: captcha.php:485
+#: captcha.php:567
+msgid "Error: You have entered an incorrect CAPTCHA value. Click the BACK button on your browser, and try again."
+msgstr "Kļūda: Jūs ievadījāt nepareizu CAPTCHA. Nospiediet Jūsu pārlūkā Atpakaļ un mēģiniet vēlreiz."
+
+#: captcha.php:579
+#: captcha.php:812
+msgid "zero"
+msgstr "nulle"
+
+#: captcha.php:580
+#: captcha.php:813
+#: captcha.php:1026
+msgid "one"
+msgstr "viens"
+
+#: captcha.php:581
+#: captcha.php:814
+msgid "two"
+msgstr "divi"
+
+#: captcha.php:582
+#: captcha.php:815
+msgid "three"
+msgstr "trīs"
+
+#: captcha.php:583
+#: captcha.php:816
+msgid "four"
+msgstr "četri"
+
+#: captcha.php:584
+#: captcha.php:817
+msgid "five"
+msgstr "pieci"
+
+#: captcha.php:585
+#: captcha.php:818
+#: captcha.php:1026
+msgid "six"
+msgstr "seši"
+
+#: captcha.php:586
+#: captcha.php:819
+#: captcha.php:1014
+#: captcha.php:1020
+msgid "seven"
+msgstr "septiņi"
+
+#: captcha.php:587
+#: captcha.php:820
+#: captcha.php:1017
+msgid "eight"
+msgstr "astoņi"
+
+#: captcha.php:588
+#: captcha.php:821
+msgid "nine"
+msgstr "deviņi"
+
+#: captcha.php:591
+#: captcha.php:824
+msgid "eleven"
+msgstr "vienpadsmit"
+
+#: captcha.php:592
+#: captcha.php:825
+msgid "twelve"
+msgstr "divpadsmit"
+
+#: captcha.php:593
+#: captcha.php:826
+msgid "thirteen"
+msgstr "trīspadsmit"
+
+#: captcha.php:594
+#: captcha.php:827
+msgid "fourteen"
+msgstr "četrpadsmit"
+
+#: captcha.php:595
+#: captcha.php:828
+msgid "fifteen"
+msgstr "piecpadsmit"
+
+#: captcha.php:596
+#: captcha.php:829
+msgid "sixteen"
+msgstr "sešpadsmit"
+
+#: captcha.php:597
+#: captcha.php:830
+msgid "seventeen"
+msgstr "septiņpadsmit"
+
+#: captcha.php:598
+#: captcha.php:831
+msgid "eighteen"
+msgstr "astoņpadsmit"
+
+#: captcha.php:599
+#: captcha.php:832
+msgid "nineteen"
+msgstr "deviņpadsmit"
+
+#: captcha.php:602
+#: captcha.php:835
+msgid "ten"
+msgstr "desmit"
+
+#: captcha.php:603
+#: captcha.php:836
+msgid "twenty"
+msgstr "divdesmit"
+
+#: captcha.php:604
+#: captcha.php:837
+msgid "thirty"
+msgstr "trīsdesmit"
+
+#: captcha.php:605
+#: captcha.php:838
+msgid "forty"
+msgstr "četrdesmit"
+
+#: captcha.php:606
+#: captcha.php:839
+msgid "fifty"
+msgstr "piecdesmit"
+
+#: captcha.php:607
+#: captcha.php:840
+msgid "sixty"
+msgstr "sešdesmit"
+
+#: captcha.php:608
+#: captcha.php:841
+msgid "seventy"
+msgstr "septiņdesmit"
+
+#: captcha.php:609
+#: captcha.php:842
+msgid "eighty"
+msgstr "astoņdesmit"
+
+#: captcha.php:610
+#: captcha.php:843
+msgid "ninety"
+msgstr "deviņdesmit"
+
+#: captcha.php:697
+#: captcha.php:930
+msgid "and"
+msgstr "un"
+
+#: captcha.php:717
+msgid "Encryption password is not set"
+msgstr "Šifrēšanas parole nav iestatīta"
+
+#: captcha.php:737
+msgid "Decryption password is not set"
+msgstr "Dešifrēšanas parole nav iestatīta"
+
+#, fuzzy
+#~ msgid "Please enter a valid email address."
+#~ msgstr "Lūdzu aizpildiet CAPTCHA"
+#~ msgid "Pro plugins"
+#~ msgstr "Pro spraudņi"
+#~ msgid "Activated plugins"
+#~ msgstr "Aktivētie spraudņi"
+#~ msgid "Read more"
+#~ msgstr "Lasīt vairāk ..."
+#~ msgid "Installed plugins"
+#~ msgstr "Uzstādītie spraudņi"
+#~ msgid "Recommended plugins"
+#~ msgstr "Rekomendētie spraudņi"
+#~ msgid "Purchase"
+#~ msgstr "Iegādāties"
+#~ msgid "Free plugins"
+#~ msgstr "Bezmaksas spraudņi"
+#~ msgid "Download"
+#~ msgstr "Lejuplādēt"
+#~ msgid "Install %s"
+#~ msgstr "Uzstādīts %s"
+#~ msgid "Install now from wordpress.org"
+#~ msgstr "Uzstādīt tagad no wordpress.org"
+#~ msgid "If you have any questions, please contact us via"
+#~ msgstr "Ja Jums ir kāds jautājums, lūdzu kontaktējaties caur"
+
+#, fuzzy
+#~ msgid "Active Plugins"
+#~ msgstr "Aktivētie spraudņi"
+
+#, fuzzy
+#~ msgid "Inactive Plugins"
+#~ msgstr "Aktivētie spraudņi"
+
+#, fuzzy
+#~ msgid "Send to support"
+#~ msgstr "Atbalsts"
+#~ msgid "(powered by bestwebsoft.com)"
+#~ msgstr "(izstrādāja bestwebsoft.com)"
+#~ msgid ""
+#~ "If you have any questions, please contact us via plugin@bestwebsoft.com "
+#~ "or fill in the contact form on our website"
+#~ msgstr ""
+#~ "Если у вас есть какие-то впросы, обращайтесь на plugin@bestwebsoft.com "
+#~ "или заполните контактную форму на нашем сайте"
+#~ msgid "The password of encryption is not set"
+#~ msgstr "Пароль для шифрования не установлен"
+#~ msgid "Increase"
+#~ msgstr "Умножить"
+#~ msgid "Difficulty for CAPTCHA"
+#~ msgstr "Уровень сложности КАПЧИ"
+#~ msgid "That CAPTCHA was incorrect."
+#~ msgstr "КАПЧА введена некорректно"
+#~ msgid "null"
+#~ msgstr "ноль"
+#~ msgid "Install Now"
+#~ msgstr "Установить сейчас"
+
