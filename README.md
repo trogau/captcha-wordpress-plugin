@@ -5,6 +5,7 @@ The Captcha plugin allows you to implement a super security captcha form into we
 
 Official plugin page: http://bestwebsoft.com/plugin/captcha-plugin/
 
+<a href="http://bestwebsoft.com/plugin/captcha-plugin/#description" target=_blank>Description</a>
 
 Features
 -----------------------------
