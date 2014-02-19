@@ -3,20 +3,25 @@ Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
 Tags: captcha, match captcha, text captcha, spam, antispam, login, registration, comment, lost password, capcha, catcha, captha
 Requires at least: 3.0
-Tested up to: 3.6.1
-Stable tag: 3.8.4
+Tested up to: 3.8.1
+Stable tag: 3.9.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin allows you to implement super security captcha form into web forms.
+This plugin allows you to implement super security captcha form into web forms. 
 
 == Description ==
 
 The Captcha plugin allows you to implement a super security captcha form into web forms. It protects your website from spam by means of math logic, easily understood by human beings. You will not have to spend your precious time on annoying attempts to understand hard-to-read words, combinations of letters or pictures that make your eyes pop up. All you need is to do one of the three basic maths actions - add, subtract and multiply.
 This captcha can be used for login, registration, password recovery, comments forms.
-There is also a premium version of the plugin, allowing compatibility with BuddyPress (Registration form, Comments form, "Create a Group" form).
+There is also a premium version of the plugin, allowing compatibility with BuddyPress (Registration form, Comments form, "Create a Group" form) and Contact Form 7.
 
-<a href="http://wordpress.org/extend/plugins/captcha/faq/" target="_blank">FAQ</a>
+http://www.youtube.com/watch?v=SBZhBkO6Szs
+
+<a href="http://www.youtube.com/watch?v=svcdSfwlb2c" target="_blank">Video instruction on Installation</a>
+
+<a href="http://wordpress.org/plugins/captcha/faq/" target="_blank">FAQ</a>
+
 <a href="http://support.bestwebsoft.com" target="_blank">Support</a>
 
 <a href="http://bestwebsoft.com/plugin/captcha-pro/?k=2d2d85a3c277bf3489697c9a9ff2d352" target="_blank">Upgrade to Pro Version</a>
@@ -27,13 +32,22 @@ There is also a premium version of the plugin, allowing compatibility with Buddy
 * Actions: The basic math actions are used - add, subtract, multiply.
 * Label: You can add a label to display captcha in the form.
 
+= Recommended Plugins =
+
+The author of the Captcha also recommends the following plugins:
+
+* <a href="http://wordpress.org/plugins/updater/">Updater</a> - This plugin updates WordPress core and the plugins to the recent versions. You can also use the auto mode or manual mode for updating and set email notifications.
+There is also a premium version of the plugin <a href="http://bestwebsoft.com/plugin/updater-pro/?k=0864088de1701a5e104ffb77c6d7011c">Updater Pro</a> with more useful features available. It can make backup of all your files and database before updating. Also it can forbid some plugins or WordPress Core update.
+
 = Translation =
 
 * Arabic (ar_AR) (thanks to Albayan Design Hani Aladoli)
 * Bangla (bn_BD) (thanks to <a href="mailto:mehdi.akram@gmail.com">SM Mehdi Akram</a>, www.shamokaldarpon.com)
 * Brazilian Portuguese (pt_BR) (thanks to <a href="mailto:brenojac@gmail.com">Breno Jacinto</a>, www.iconis.org.br)
 * Bulgarian (bg_BG) (thanks to <a href="mailto:paharaman@gmail.com">Nick</a>)
+* Catalan (ca) (thanks to <a href="mailto:psiete@gmail.com">Psiete</a>)
 * Chinese (zh_CN) (thanks to Billy Jeans)
+* Taiwan (zh_TW) (thanks to <a href="mailto:hh3stuff@gmail.com">Henry H</a>)
 * Croatian (hr) (thanks to <a href="mailto:daniel@geogat.com">Daniel</a>)
 * Czech (cs_CZ) (thanks to Tomas Vesely, <a href="mailto:crysman@seznam.cz">Crysman</a>)
 * Danish (da_DK) (thanks to Byrial Ole Jensed)
@@ -48,7 +62,8 @@ There is also a premium version of the plugin, allowing compatibility with Buddy
 * Hindi (hi_IN) (thanks to <a href="mailto:ash.pr@outshinesolutions.com">Outshine Solutions</a>, www.outshinesolutions.com)
 * Hungarian (hu_HU) (thanks to Bőm Tamás)
 * Japanese (ja) (thanks to Foken)
-* Italian (it_IT) (thanks to Gianluca Di Carlo)
+* Indonesian (id_ID) (thanks to <a href="mailto:nasroel@al-badar.net">Nasrulhaq Muiz</a>, www.al-badar.net)
+* Italian (it_IT) (thanks to Gianluca Di Carlo, <a href="mailto:marco@blackstudio.it">Marco</a>)
 * Latvian (lv) (thanks to <a href="mailto:juris.o@gmail.com">Juris O</a>)
 * Lithuanian (lt_LT) (thanks to <a href="mailto:arnas.metal@gmail.com">Arnas</a>)
 * Norwegian (nb_NO) (thanks to Tore Hjartland)
@@ -62,7 +77,7 @@ There is also a premium version of the plugin, allowing compatibility with Buddy
 * Swedish (sv_SE) (thanks to Christer Rönningborg, <a href="mailto:blittan@xbmc.org">Blittan</a>)
 * Tagalog (tl) (thanks to <a href="mailto:rjalali@languageconnect.net">Roozbeh Jalali</a>, www.languageconnect.net)
 * Turkish (tr_TR) (thanks to Can Atasever, www.candanblog.com)
-* Ukrainian (uk_UA)
+* Ukrainian (uk)
 * Vietnamese (vi_VN) (thanks to NDT Solutions)
 
 If you would like to create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> for <a href="http://support.bestwebsoft.com" target="_blank">BestWebSoft</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files  <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
@@ -79,7 +94,11 @@ We can fix some things for free for the users who provide translation of our plu
 
 1. Upload the `captcha` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin via the 'Plugins' menu in WordPress.
-3. Plugin settings are located in 'Settings', 'Captcha'.
+3. Plugin settings are located in "BWS Plugins" > "Captcha".
+
+<a href="http://bestwebsoft.com/wp-content/uploads/manual/wp_plugin/captcha/Captcha_Installation_step-by-step_instruction.pdf" target="_blank">View a PDF version of Step-by-step Instruction on Captcha Installation</a>.
+
+http://www.youtube.com/watch?v=svcdSfwlb2c
 
 == Frequently Asked Questions ==
 
@@ -141,6 +160,14 @@ or
 `<?php if( function_exists( 'cptch_check_custom_form' ) && cptch_check_custom_form() !== true ) echo "Please complete the CAPTCHA." ?>`
 You could add this line to the variable and display this variable in the required place instead of `echo "Please complete the CAPTCHA."`. If there is a variable (responsible for the errors output) in the check function, this phrase can be added to this variable. If the function returns 'true', it means that you have entered captcha properly. In all other cases the function will return 'false'.
 
+= I have some problems with the plugin's work. What Information should I provide to receive proper support? =
+
+Please make sure that the problem hasn't been discussed yet on our forum (<a href="http://support.bestwebsoft.com" target="_blank">http://support.bestwebsoft.com</a>). If no, please provide the following data along with your problem's description:
+1. the link to the page where the problem occurs
+2. the name of the plugin and its version. If you are using a pro version - your order number.
+3. the version of your WordPress installation
+4. copy and paste into the message your system status report. Please read more here: <a href="http://bestwebsoft.com/wp-content/uploads/manual/wp_plugin/general/System_Status.pdf" target="_blank">System_Status.pdf</a>
+
 == Screenshots ==
 
 1. Captcha Settings page.
@@ -148,8 +175,57 @@ You could add this line to the variable and display this variable in the require
 3. Registration form with Captcha.
 4. Lost password form with Captcha.
 5. Login form with Captcha.
+5. Contact form with Captcha.
 
 == Changelog ==
+
+= V3.9.6 - 12.02.2014 =
+* Bugfix : Comflict with plugin Limit Login Attempts is fixed (a false login when logging out of the WP backend).
+* Bugfix : We fixed displaying captcha in contact form.
+
+= V3.9.5 - 03.02.2014 =
+* Update : We updated all functionality for wordpress 3.8.1.
+* Update : Changed filter for captcha in the login form.
+
+= V3.9.4 - 16.01.2014 =
+* Update : BWS plugins section is updated.
+
+= V3.9.3 - 25.12.2013 =
+* Update : The French language file is updated.
+* Update : We updated all functionality for wordpress 3.8.
+
+= V3.9.2 - 10.12.2013 =
+* NEW : A notice when changing settings on the plugin's settings page was added. 
+* Update : We updated all functionality for wordpress 3.8-RC1.
+
+= V3.9.1 - 29.11.2013 =
+* Update : The Ukrainian language file is updated to the plugin.
+* Update : Screenshots are updated.
+
+= V3.9 - 22.11.2013 =
+* NEW : The Taiwan language file is added to the plugin.
+* Update : BWS plugins section is updated.
+
+= V3.8.9 - 15.11.2013 =
+* Update : The French language file is updated. 
+* NEW : The Indonesian language file is added to the plugin.
+
+= V3.8.8 - 05.11.2013 =
+* NEW : Add checking installed wordpress version.
+* Update : We updated security functionality.
+
+= V3.8.7 - 31.10.2013 =
+* Update : We updated all functionality for wordpress 3.7.1.
+* Update : Activation of radio button or checkbox by clicking on its label.
+* Update : We added Tooltips for settings page.
+
+= V3.8.6 - 25.10.2013 =
+* NEW : Ability to change required symbol (asterisk).
+* Update : We updated all functionality for wordpress 3.7.
+
+= V3.8.5 - 17.10.2013 =
+* Update : The Italian language file is updated. 
+* NEW : The Catalan language file is added to the plugin.
 
 = V3.8.4 - 8.10.2013 =
 * Bugfix : The duplicate style is removed.
@@ -375,6 +451,42 @@ You could add this line to the variable and display this variable in the require
 * Select functionality of mathematical actions and level of their difficulty are implemented.
 
 == Upgrade Notice ==
+
+= V3.9.6 =
+Comflict with plugin Limit Login Attempts is fixed (a false login when logging out of the WP backend). We fixed displaying captcha in contact form.
+
+= V3.9.5 =
+We updated all functionality for wordpress 3.8.1. Changed filter for captcha in the login form.
+
+= V3.9.4 =
+BWS plugins section is updated.
+
+= V3.9.3 =
+The French language file is updated. We updated all functionality for wordpress 3.8.
+
+= V3.9.2 =
+A notice when changing settings on the plugin's settings page was added. We updated all functionality for wordpress 3.8-RC1.
+
+= V3.9.1 =
+The Ukrainian language file is updated to the plugin. Screenshots are updated.
+
+= V3.9 =
+The Taiwan language file is added to the plugin. BWS plugins section is updated.
+
+= V3.8.9 =
+The French language file is updated. The Indonesian language file is added to the plugin.
+
+= V3.8.8 =
+Add checking installed wordpress version. We updated security functionality.
+
+= V3.8.7 =
+We updated all functionality for wordpress 3.7.1. Activation of radio button or checkbox by clicking on its label. We added Tooltips for settings page.
+
+= V3.8.6 =
+Ability to change required symbol (asterisk). We updated all functionality for wordpress 3.7.
+
+= V3.8.5 =
+The Italian language file is updated. The Catalan language file is added to the plugin.
 
 = V3.8.4 =
 The duplicate style is removed. BWS plugins section is updated.
