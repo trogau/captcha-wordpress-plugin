@@ -1,7 +1,7 @@
 Captcha WordPress Plugin
 ========================
 
-Captcha plugin allows you to protect your website from spam using math logic which can be used for login, registration, reseting password, comments forms. Russian, German and Dutch languages are added.
+The Captcha plugin allows you to implement a super security captcha form into web forms. It protects your website from spam by means of math logic, easily understood by human beings. You will not have to spend your precious time on annoying attempts to understand hard-to-read words, combinations of letters or pictures that make your eyes pop up. All you need is to do one of the three basic maths actions - add, subtract and multiply. This captcha can be used for login, registration, password recovery, comments forms. There is also a premium version of the plugin, allowing compatibility with BuddyPress (Registration form, Comments form, "Create a Group" form) and Contact Form 7.
 
 Official plugin page: http://bestwebsoft.com/plugin/captcha-plugin/
 
