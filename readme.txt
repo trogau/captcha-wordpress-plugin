@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=1&product_id=94
 Tags: add, antispam, anti-spam, anti-spam security, arithmetic actions, capcha, captcha, captha, catcha, cpatcha, captcha numbers, captcha plugin, captcha words, contact form with captcha, comment,  label, login, lost password, match captcha, math actions, multiply, registration, security, spam, spam protection, substract, text captcha, web form protection
 Requires at least: 3.0
-Tested up to: 3.9.1
-Stable tag: 4.0.2
+Tested up to: 4.0-beta3
+Stable tag: 4.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -180,6 +180,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 6. Contact form with Captcha.
 
 == Changelog ==
+
+= V4.0.3 - 07.08.2014 =
+* Budfix : Security Exploit was fixed.
 
 = V4.0.2 - 28.07.2014 =
 * Update : We updated all functionality for Limit Attempts plugin.
@@ -474,6 +477,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Select functionality of mathematical actions and level of their difficulty are implemented.
 
 == Upgrade Notice ==
+
+= V4.0.3 =
+Security Exploit was fixed.
 
 = V4.0.2 =
 We updated all functionality for Limit Attempts plugin.

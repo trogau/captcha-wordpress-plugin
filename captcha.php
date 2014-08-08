@@ -4,7 +4,7 @@ Plugin Name: Captcha
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: Plugin Captcha intended to prove that the visitor is a human being and not a spam robot. Plugin asks the visitor to answer a math question.
 Author: BestWebSoft
-Version: 4.0.2
+Version: 4.0.3
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -262,8 +262,8 @@ if ( ! function_exists( 'cptch_settings_page' ) ) {
 			$cptch_request_options['cptch_hide_register'] 			=	isset( $_REQUEST['cptch_hide_register'] ) ? 1 : 0;
 			$cptch_request_options['cptch_contact_form'] 			=	isset( $_REQUEST['cptch_contact_form'] ) ? 1 : 0;
 
-			$cptch_request_options['cptch_label_form'] 				=	isset( $_REQUEST['cptch_label_form'] ) ? $_REQUEST['cptch_label_form'] : '';
-			$cptch_request_options['cptch_required_symbol'] 		=	isset( $_REQUEST['cptch_required_symbol'] ) ? $_REQUEST['cptch_required_symbol'] : '';
+			$cptch_request_options['cptch_label_form'] 				=	isset( $_REQUEST['cptch_label_form'] ) ? stripslashes( esc_html( $_REQUEST['cptch_label_form'] ) ) : '';
+			$cptch_request_options['cptch_required_symbol'] 		=	isset( $_REQUEST['cptch_required_symbol'] ) ? stripslashes( esc_html( $_REQUEST['cptch_required_symbol'] ) ) : '';
 						
 			$cptch_request_options['cptch_math_action_plus']		=	isset( $_REQUEST['cptch_math_action_plus'] ) ? 1 : 0;
 			$cptch_request_options['cptch_math_action_minus'] 		=	isset( $_REQUEST['cptch_math_action_minus'] ) ? 1 : 0;
@@ -291,14 +291,14 @@ if ( ! function_exists( 'cptch_settings_page' ) ) {
 		if ( isset( $_GET['action'] ) && 'go_pro' == $_GET['action'] ) {
 			global $bstwbsftwppdtplgns_options;
 
-			$bws_license_key = ( isset( $_POST['bws_license_key'] ) ) ? trim( $_POST['bws_license_key'] ) : "";
+			$bws_license_key = ( isset( $_POST['bws_license_key'] ) ) ? trim( esc_html( $_POST['bws_license_key'] ) ) : "";
 
 			if ( isset( $_POST['bws_license_submit'] ) && check_admin_referer( plugin_basename( __FILE__ ), 'bws_license_nonce_name' ) ) {
 				if ( '' != $bws_license_key ) { 
 					if ( strlen( $bws_license_key ) != 18 ) {
 						$error = __( "Wrong license key", 'captcha' );
 					} else {
-						$bws_license_plugin = trim( $_POST['bws_license_plugin'] );	
+						$bws_license_plugin = stripslashes( esc_html( $_POST['bws_license_plugin'] ) );	
 						if ( isset( $bstwbsftwppdtplgns_options['go_pro'][ $bws_license_plugin ]['count'] ) && $bstwbsftwppdtplgns_options['go_pro'][ $bws_license_plugin ]['time'] < ( time() + (24 * 60 * 60) ) ) {
 							$bstwbsftwppdtplgns_options['go_pro'][ $bws_license_plugin ]['count'] = $bstwbsftwppdtplgns_options['go_pro'][ $bws_license_plugin ]['count'] + 1;
 						} else {
@@ -488,7 +488,7 @@ if ( ! function_exists( 'cptch_settings_page' ) ) {
 					<table class="form-table">
 						<tr valign="top">
 							<th scope="row"><?php _e( 'Title for CAPTCHA in the form', 'captcha' ); ?></th>
-							<td><input type="text" name="cptch_label_form" value="<?php echo stripslashes( $cptch_options['cptch_label_form'] ); ?>" <?php if ( 1 == $cptch_options['cptch_label_form'] ) echo "checked=\"checked\""; ?> /></td>
+							<td><input type="text" name="cptch_label_form" value="<?php echo $cptch_options['cptch_label_form']; ?>" <?php if ( 1 == $cptch_options['cptch_label_form'] ) echo "checked=\"checked\""; ?> /></td>
 						</tr>
 						<tr valign="top">
 							<th scope="row" style="width:200px;"><?php _e( "Required symbol", 'captcha' ); ?></th>
@@ -602,7 +602,7 @@ if ( ! function_exists( 'cptch_login_form' ) ) {
 		/* captcha html - login form */
 		echo '<p class="cptch_block">';
 		if ( "" != $cptch_options['cptch_label_form'] )	
-			echo '<label>' . stripslashes( $cptch_options['cptch_label_form'] ) . '</label><br />';
+			echo '<label>' . $cptch_options['cptch_label_form'] . '</label><br />';
 		if ( isset( $_SESSION['cptch_error'] ) ) {
 			echo "<br /><span style='color:red'>" . $_SESSION['cptch_error'] . "</span><br />";
 			unset( $_SESSION['cptch_error'] );
@@ -684,7 +684,7 @@ if ( ! function_exists( 'cptch_comment_form' ) ) {
 		/* captcha html - comment form */
 		echo '<p class="cptch_block">';
 		if ( "" != $cptch_options['cptch_label_form'] )	
-			echo '<label>' . stripslashes( $cptch_options['cptch_label_form'] ) . '<span class="required"> ' . $cptch_options['cptch_required_symbol'] . '</span></label>';
+			echo '<label>' . $cptch_options['cptch_label_form'] . '<span class="required"> ' . $cptch_options['cptch_required_symbol'] . '</span></label>';
 		echo '<br />';
 		cptch_display_captcha();
 		echo '</p>';
@@ -726,7 +726,7 @@ if ( ! function_exists( 'cptch_comment_form_wp3' ) ) {
 		/* captcha html - comment form */
 		echo '<p class="cptch_block">';
 		if ( "" != $cptch_options['cptch_label_form'] )	
-			echo '<label>' . stripslashes( $cptch_options['cptch_label_form'] ) . '<span class="required"> ' . $cptch_options['cptch_required_symbol'] . '</span></label>';
+			echo '<label>' . $cptch_options['cptch_label_form'] . '<span class="required"> ' . $cptch_options['cptch_required_symbol'] . '</span></label>';
 		echo '<br />';
 		cptch_display_captcha();
 		echo '</p>';
@@ -792,7 +792,7 @@ if ( ! function_exists( 'cptch_register_form' ) ) {
 		/* the captcha html - register form */
 		echo '<p class="cptch_block" style="text-align:left;">';
 		if ( "" != $cptch_options['cptch_label_form'] )	
-			echo '<label>'. stripslashes( $cptch_options['cptch_label_form'] ) .'</label><br />';
+			echo '<label>'. $cptch_options['cptch_label_form'] .'</label><br />';
 		echo '<br />';
 		cptch_display_captcha();
 		echo '</p>
@@ -1136,7 +1136,7 @@ if ( ! function_exists( 'cptch_custom_form' ) ) {
 		/* captcha html - login form */
 		$content .= '<p class="cptch_block" style="text-align:left;">';
 		if ( "" != $cptch_options['cptch_label_form'] )	
-			$content .= '<label>' . stripslashes( $cptch_options['cptch_label_form'] ) .'<span class="required"> ' . $cptch_options['cptch_required_symbol'] . '</span></label><br />';
+			$content .= '<label>' . $cptch_options['cptch_label_form'] .'<span class="required"> ' . $cptch_options['cptch_required_symbol'] . '</span></label><br />';
 		else
 			$content .= '<br />';
 		if ( isset( $error_message['error_captcha'] ) ) {
