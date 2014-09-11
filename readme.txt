@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=1&product_id=94
 Tags: add, antispam, anti-spam, anti-spam security, arithmetic actions, capcha, captcha, captha, catcha, cpatcha, captcha numbers, captcha plugin, captcha words, contact form with captcha, comment,  label, login, lost password, match captcha, math actions, multiply, registration, security, spam, spam protection, substract, text captcha, web form protection
 Requires at least: 3.0
-Tested up to: 4.0-beta3
-Stable tag: 4.0.3
+Tested up to: 4.0
+Stable tag: 4.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -56,7 +56,7 @@ There is also a premium version of the plugin <a href="http://bestwebsoft.com/pl
 * Dutch (nl_NL) (thanks to <a href="mailto:byrial@vip.cybercity.dk">Bart Duineveld</a>)
 * Estonian (et) (thanks to Ahto Tanner)
 * Greek (el) (thanks to Aris, www.paraxeno.net)
-* Farsi/Persian (fa_IR) (thanks to <a href="mailto:info[at]mpspace[dot]zio[dot]ir">Meysam Parvizi</a>, www.mpspace.zio.ir)
+* Farsi/Persian (fa_IR) (thanks to <a href="mailto:mostafaasadi73@gmail.com">Mostafa Asadi</a>, www.ma73.ir)
 * Finnish (fi) (thanks to Mikko Sederholm)
 * French (fr_FR) (thanks to Martel Benjamin, <a href="mailto:lcapronnier@yahoo.com">Capronnier luc</a>)
 * German (de_DE) (thanks to Thomas Hartung, <a href="mailto:lothar.schiborr@web.de">Lothar Schiborr</a>)
@@ -180,6 +180,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 6. Contact form with Captcha.
 
 == Changelog ==
+
+= V4.0.4 - 10.09.2014 =
+* Update : The Farsi language file is updated.
+* Update : We updated all functionality for wordpress 4.0.
 
 = V4.0.3 - 07.08.2014 =
 * Budfix : Security Exploit was fixed.
@@ -477,6 +481,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Select functionality of mathematical actions and level of their difficulty are implemented.
 
 == Upgrade Notice ==
+
+= V4.0.4 =
+The Farsi language file is updated. We updated all functionality for wordpress 4.0.
 
 = V4.0.3 =
 Security Exploit was fixed.
