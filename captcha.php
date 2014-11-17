@@ -4,7 +4,7 @@ Plugin Name: Captcha
 Plugin URI: http://bestwebsoft.com/products/
 Description: Plugin Captcha intended to prove that the visitor is a human being and not a spam robot. Plugin asks the visitor to answer a math question.
 Author: BestWebSoft
-Version: 4.0.5
+Version: 4.0.6
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -75,6 +75,10 @@ if ( ! function_exists ( 'cptch_init' ) ) {
 
 		/* Function check if plugin is compatible with current WP version  */
 		cptch_version_check();
+
+		if ( ! is_admin() ) {
+			cptch_contact_form_options();
+		}
 	}
 }
 
@@ -90,8 +94,7 @@ if ( ! function_exists ( 'cptch_admin_init' ) ) {
 
 		/* Call register settings function */
 		if ( isset( $_GET['page'] ) && "captcha.php" == $_GET['page'] ) {
-			cptch_settings();
-			cptch_contact_form_options();
+			cptch_settings();			
 		}
 	}
 }
@@ -298,8 +301,7 @@ if ( ! function_exists( 'cptch_settings_page' ) ) {
 							$bstwbsftwppdtplgns_options['go_pro'][ $bws_license_plugin ]['time'] = time();
 						}	
 
-						/* download Pro */
-						
+						/* download Pro */						
 						if ( ! array_key_exists( $bws_license_plugin, $all_plugins ) ) {
 							$current = get_site_transient( 'update_plugins' );
 							if ( is_array( $all_plugins ) && !empty( $all_plugins ) && isset( $current ) && is_array( $current->response ) ) {
@@ -864,7 +866,12 @@ if ( ! function_exists( 'cptch_lostpassword_post' ) ) {
 /* Functionality of the captcha logic work */
 if ( ! function_exists( 'cptch_display_captcha' ) ) {
 	function cptch_display_captcha() {
-		global $cptch_options, $cptch_time;
+		global $cptch_options, $cptch_time, $cptch_plugin_info;
+
+		if ( ! $cptch_plugin_info ) {
+			include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+			$cptch_plugin_info = get_plugin_data( __FILE__ );
+		}
 
 		if ( ! isset( $cptch_options['cptch_str_key'] ) )
 			$cptch_options = get_option( 'cptch_options' );
@@ -962,7 +969,7 @@ if ( ! function_exists( 'cptch_display_captcha' ) ) {
 		$str_math_expretion = "";
 		/* First part of mathematical expression */
 		if ( 0 == $rand_input )
-			$str_math_expretion .= "<input id=\"cptch_input\" type=\"text\" autocomplete=\"off\" name=\"cptch_number\" value=\"\" maxlength=\"2\" size=\"2\" aria-required=\"true\" required=\"required\" style=\"margin-bottom:0;display:inline;font-size: 12px;width: 40px;\" />";
+			$str_math_expretion .= "<input id=\"cptch_input\" class=\"cptch_input\" type=\"text\" autocomplete=\"off\" name=\"cptch_number\" value=\"\" maxlength=\"2\" size=\"2\" aria-required=\"true\" required=\"required\" style=\"margin-bottom:0;display:inline;font-size: 12px;width: 40px;\" />";
 		else if ( 0 == $rand_number_string || 0 == $cptch_options["cptch_difficulty_number"] )
 			$str_math_expretion .= cptch_converting( $number_string[ $array_math_expretion[0] ] );
 		else
@@ -973,7 +980,7 @@ if ( ! function_exists( 'cptch_display_captcha' ) ) {
 		
 		/* Second part of mathematical expression */
 		if ( 1 == $rand_input )
-			$str_math_expretion .= " <input id=\"cptch_input\" type=\"text\" autocomplete=\"off\" name=\"cptch_number\" value=\"\" maxlength=\"2\" size=\"2\" aria-required=\"true\" required=\"required\" style=\"margin-bottom:0;display:inline;font-size: 12px;width: 40px;\" />";
+			$str_math_expretion .= " <input id=\"cptch_input\" class=\"cptch_input\" type=\"text\" autocomplete=\"off\" name=\"cptch_number\" value=\"\" maxlength=\"2\" size=\"2\" aria-required=\"true\" required=\"required\" style=\"margin-bottom:0;display:inline;font-size: 12px;width: 40px;\" />";
 		else if ( 1 == $rand_number_string || 0 == $cptch_options["cptch_difficulty_number"] )
 			$str_math_expretion .= " " . cptch_converting( $number_string[ $array_math_expretion[1] ] );
 		else
@@ -984,7 +991,7 @@ if ( ! function_exists( 'cptch_display_captcha' ) ) {
 		
 		/* Add result of mathematical expression */
 		if ( 2 == $rand_input ) {
-			$str_math_expretion .= " <input id=\"cptch_input\" type=\"text\" autocomplete=\"off\" name=\"cptch_number\" value=\"\" maxlength=\"2\" size=\"2\" aria-required=\"true\" required=\"required\" style=\"margin-bottom:0;display:inline;font-size: 12px;width: 40px;\" />";
+			$str_math_expretion .= " <input id=\"cptch_input\" class=\"cptch_input\" type=\"text\" autocomplete=\"off\" name=\"cptch_number\" value=\"\" maxlength=\"2\" size=\"2\" aria-required=\"true\" required=\"required\" style=\"margin-bottom:0;display:inline;font-size: 12px;width: 40px;\" />";
 		} else if ( 2 == $rand_number_string || 0 == $cptch_options["cptch_difficulty_number"] ) {
 			if ( 10 > $array_math_expretion[2] )
 				$str_math_expretion .= " " . cptch_converting( $number_string[ $array_math_expretion[2] ] );
@@ -1004,7 +1011,7 @@ if ( ! function_exists( 'cptch_display_captcha' ) ) {
 		?>
 		<input type="hidden" name="cptch_result" value="<?php echo $str = cptch_encode( $array_math_expretion[ $rand_input ], $str_key, $cptch_time ); ?>" />
 		<input type="hidden" name="cptch_time" value="<?php echo $cptch_time; ?>" />
-		<input type="hidden" value="Version: 2.4" />
+		<input type="hidden" value="Version: <?php echo $cptch_plugin_info["Version"]; ?>" />
 		<?php echo $str_math_expretion; ?>
 	<?php
 	}
@@ -1161,7 +1168,12 @@ if ( ! function_exists( 'cptch_check_custom_form' ) ) {
 /* Functionality of the captcha logic work for custom form */
 if ( ! function_exists( 'cptch_display_captcha_custom' ) ) {
 	function cptch_display_captcha_custom() {
-		global $cptch_options, $cptch_time;
+		global $cptch_options, $cptch_time, $cptch_plugin_info;
+
+		if ( ! $cptch_plugin_info ) {
+			include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+			$cptch_plugin_info = get_plugin_data( __FILE__ );
+		}
 
 		if ( ! isset( $cptch_options['cptch_str_key'] ) )
 			$cptch_options = get_option( 'cptch_options' );
@@ -1261,7 +1273,7 @@ if ( ! function_exists( 'cptch_display_captcha_custom' ) ) {
 		$str_math_expretion = "";
 		/* First part of mathematical expression */
 		if ( 0 == $rand_input )
-			$str_math_expretion .= "<input type=\"text\" autocomplete=\"off\" name=\"cptch_number\" value=\"\" maxlength=\"1\" size=\"1\" style=\"margin-bottom:0;display:inline;font-size: 12px;width: 40px;\" />";
+			$str_math_expretion .= "<input class=\"cptch_input\" type=\"text\" autocomplete=\"off\" name=\"cptch_number\" value=\"\" maxlength=\"1\" size=\"1\" style=\"margin-bottom:0;display:inline;font-size: 12px;width: 40px;\" />";
 		else if ( 0 == $rand_number_string || 0 == $cptch_options["cptch_difficulty_number"] )
 			$str_math_expretion .= cptch_converting( $number_string[ $array_math_expretion[0] ] );
 		else
@@ -1272,7 +1284,7 @@ if ( ! function_exists( 'cptch_display_captcha_custom' ) ) {
 		
 		/* Second part of mathematical expression */
 		if ( 1 == $rand_input )
-			$str_math_expretion .= " <input type=\"text\" autocomplete=\"off\" name=\"cptch_number\" value=\"\" maxlength=\"1\" size=\"1\" style=\"margin-bottom:0;display:inline;font-size: 12px;width: 40px;\" />";
+			$str_math_expretion .= " <input class=\"cptch_input\" type=\"text\" autocomplete=\"off\" name=\"cptch_number\" value=\"\" maxlength=\"1\" size=\"1\" style=\"margin-bottom:0;display:inline;font-size: 12px;width: 40px;\" />";
 		else if ( 1 == $rand_number_string || 0 == $cptch_options["cptch_difficulty_number"] )
 			$str_math_expretion .= " " . cptch_converting( $number_string[ $array_math_expretion[1] ] );
 		else
@@ -1283,7 +1295,7 @@ if ( ! function_exists( 'cptch_display_captcha_custom' ) ) {
 		
 		/* Add result of mathematical expression */
 		if ( 2 == $rand_input ) {
-			$str_math_expretion .= " <input type=\"text\" autocomplete=\"off\" name=\"cptch_number\" value=\"\" maxlength=\"2\" size=\"1\" style=\"margin-bottom:0;display:inline;font-size: 12px;width: 40px;\" />";
+			$str_math_expretion .= " <input class=\"cptch_input\" type=\"text\" autocomplete=\"off\" name=\"cptch_number\" value=\"\" maxlength=\"2\" size=\"1\" style=\"margin-bottom:0;display:inline;font-size: 12px;width: 40px;\" />";
 		} else if ( 2 == $rand_number_string || 0 == $cptch_options["cptch_difficulty_number"] ) {
 			if ( 10 > $array_math_expretion[2] )
 				$str_math_expretion .= " " . cptch_converting( $number_string[ $array_math_expretion[2] ] );
@@ -1301,64 +1313,23 @@ if ( ! function_exists( 'cptch_display_captcha_custom' ) ) {
 		}
 		/* Add hidden field with encoding result */
 		$content .= '<input type="hidden" name="cptch_result" value="' . $str = cptch_encode( $array_math_expretion[ $rand_input ], $str_key, $cptch_time ) . '" />
-		<input type="hidden" name="cptch_time" value="' . $cptch_time . '" />
-		<input type="hidden" value="Version: 2.4" />';
-		$content .= $str_math_expretion; 
+			<input type="hidden" name="cptch_time" value="' . $cptch_time . '" />
+			<input type="hidden" value="Version: ' . $cptch_plugin_info["Version"] . '" />' .
+			$str_math_expretion; 
 		return $content;
 	}
 }
 
 if ( ! function_exists( 'cptch_contact_form_options' ) ) {
 	function cptch_contact_form_options() {
-		if ( function_exists( 'get_plugins' ) ) {
-			$all_plugins = get_plugins();
-			if ( array_key_exists( 'contact-form-pro/contact_form_pro.php', $all_plugins ) ) {
-				$cptch_options = get_option( 'cptch_options' );
-				if ( 1 == $cptch_options['cptch_contact_form'] ) {
-					add_filter('cntctfrmpr_display_captcha', 'cptch_custom_form');
-					add_filter('cntctfrmpr_check_form', 'cptch_check_custom_form');
-				} elseif ( 0 == $cptch_options['cptch_contact_form'] ) {
-					remove_filter('cntctfrmpr_display_captcha', 'cptch_custom_form');
-					remove_filter('cntctfrmpr_check_form', 'cptch_check_custom_form');
-				}
-			}
-			if ( array_key_exists( 'contact-form-plugin/contact_form.php', $all_plugins ) ) {
-				$cptch_options = get_option( 'cptch_options' );
-				if ( 1 == $cptch_options['cptch_contact_form'] ) {
-					add_filter('cntctfrm_display_captcha', 'cptch_custom_form');
-					add_filter('cntctfrm_check_form', 'cptch_check_custom_form');
-				} elseif ( 0 == $cptch_options['cptch_contact_form'] ) {
-					remove_filter('cntctfrm_display_captcha', 'cptch_custom_form');
-					remove_filter('cntctfrm_check_form', 'cptch_check_custom_form');
-				}
-			}
-		} else {
-			if ( is_multisite() ) {
-				$active_plugins = (array) array_keys( get_site_option( 'active_sitewide_plugins', array() ) );
-				$active_plugins = array_merge( $active_plugins , get_option('active_plugins') );
-			} else {
-				$active_plugins = get_option('active_plugins');
-			}
-			if ( 0 < count( preg_grep( '/contact-form-pro\/contact_form_pro.php/', $active_plugins ) ) ) { 
-				$cptch_options = get_option( 'cptch_options' );
-				if ( 1 == $cptch_options['cptch_contact_form'] ) {
-					add_filter('cntctfrmpr_display_captcha', 'cptch_custom_form');
-					add_filter('cntctfrmpr_check_form', 'cptch_check_custom_form');
-				} else if ( 0 == $cptch_options['cptch_contact_form'] ) {
-					remove_filter('cntctfrmpr_display_captcha', 'cptch_custom_form');
-					remove_filter('cntctfrmpr_check_form', 'cptch_check_custom_form');
-				}			
-			}
-			if ( 0 < count( preg_grep( '/contact-form-plugin\/contact_form.php/', $active_plugins ) ) ) { 
-				$cptch_options = get_option( 'cptch_options' );
-				if ( 1 == $cptch_options['cptch_contact_form'] ) {
-					add_filter('cntctfrm_display_captcha', 'cptch_custom_form');
-					add_filter('cntctfrm_check_form', 'cptch_check_custom_form');
-				} else if ( 0 == $cptch_options['cptch_contact_form'] ) {
-					remove_filter('cntctfrm_display_captcha', 'cptch_custom_form');
-					remove_filter('cntctfrm_check_form', 'cptch_check_custom_form');
-				}
-			}
+		global $cptch_options;
+		if ( ! $cptch_options )
+			$cptch_options = get_option( 'cptch_options' );
+		if ( isset( $cptch_options['cptch_contact_form'] ) && 1 == $cptch_options['cptch_contact_form'] ) {
+			add_filter( 'cntctfrm_display_captcha', 'cptch_custom_form' );
+			add_filter( 'cntctfrm_check_form', 'cptch_check_custom_form' );
+			add_filter( 'cntctfrmpr_display_captcha', 'cptch_custom_form' );
+			add_filter( 'cntctfrmpr_check_form', 'cptch_check_custom_form' );
 		}
 	}
 }
@@ -1393,6 +1364,8 @@ if ( ! function_exists ( 'cptch_admin_head' ) ) {
 			wp_enqueue_style( 'cptch_stylesheet', plugins_url( 'css/style.css', __FILE__ ) );
 			wp_enqueue_script( 'cptch_script', plugins_url( 'js/script.js', __FILE__ ) );
 		}
+		if ( ! is_admin() )
+			wp_enqueue_style( 'cptch_stylesheet', plugins_url( 'css/style.css', __FILE__ ) );
 	}
 }
 
@@ -1462,21 +1435,21 @@ if ( ! function_exists ( 'cptch_plugin_banner' ) ) {
 						$bstwbsftwppdtplgns_cookie_add = true;
 					} ?>
 					<script type="text/javascript">		
-							(function($) {
-								$(document).ready( function() {		
-									var hide_message = $.cookie( "cptch_hide_banner_on_plugin_page" );
-									if ( hide_message == "true") {
-										$( ".cptch_message" ).css( "display", "none" );
-									} else {
-										$( ".cptch_message" ).css( "display", "block" );
-									};
-									$( ".cptch_close_icon" ).click( function() {
-										$( ".cptch_message" ).css( "display", "none" );
-										$.cookie( "cptch_hide_banner_on_plugin_page", "true", { expires: 32 } );
-									});	
-								});
-							})(jQuery);				
-						</script>	
+						(function($) {
+							$(document).ready( function() {		
+								var hide_message = $.cookie( "cptch_hide_banner_on_plugin_page" );
+								if ( hide_message == "true") {
+									$( ".cptch_message" ).css( "display", "none" );
+								} else {
+									$( ".cptch_message" ).css( "display", "block" );
+								};
+								$( ".cptch_close_icon" ).click( function() {
+									$( ".cptch_message" ).css( "display", "none" );
+									$.cookie( "cptch_hide_banner_on_plugin_page", "true", { expires: 32 } );
+								});	
+							});
+						})(jQuery);				
+					</script>	
 					<div class="updated" style="padding: 0; margin: 0; border: none; background: none;">				                      
 						<div class="cptch_message bws_banner_on_plugin_page" style="display: none;">
 							<img class="cptch_close_icon close_icon" title="" src="<?php echo plugins_url( 'images/close_banner.png', __FILE__ ); ?>" alt=""/>
@@ -1537,8 +1510,6 @@ add_action( 'admin_init', 'cptch_admin_init' );
 /* Additional links on the plugin page */
 add_filter( 'plugin_action_links', 'cptch_plugin_action_links', 10, 2 );
 add_filter( 'plugin_row_meta', 'cptch_register_plugin_links', 10, 2 );
-
-add_action( 'after_setup_theme', 'cptch_contact_form_options' );
 
 add_action( 'admin_enqueue_scripts', 'cptch_admin_head' );
 add_action( 'wp_enqueue_scripts', 'cptch_admin_head' );

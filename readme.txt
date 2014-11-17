@@ -4,7 +4,7 @@ Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=1&
 Tags: add, antispam, anti-spam, anti-spam security, arithmetic actions, capcha, captcha, captha, catcha, cpatcha, captcha numbers, captcha plugin, captcha words, contact form with captcha, comment,  label, login, lost password, match captcha, math actions, multiply, registration, security, spam, spam protection, substract, text captcha, web form protection
 Requires at least: 3.1
 Tested up to: 4.0
-Stable tag: 4.0.5
+Stable tag: 4.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -70,6 +70,7 @@ There is also a premium version of the plugin <a href="http://bestwebsoft.com/pr
 * Lithuanian (lt_LT) (thanks to <a href="mailto:arnas.metal@gmail.com">Arnas</a>)
 * Norwegian (nb_NO) (thanks to Tore Hjartland)
 * Polish (pl_PL) (thanks to Krzysztof Opuchlik)
+* Portuguese (pt_PT) (thanks to <a href="mailto:jp.jp@sapo.pt">João Paulo Antunes</a>)
 * Romanian (ro_RO) (thanks to Ciprian)
 * Russian (ru_RU)
 * Serbian (sr_RS) (thanks to Radovan Georgijevic)
@@ -181,6 +182,12 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 
 == Changelog ==
 
+= V4.0.6 - 17.11.2014 =
+* NEW : The Portuguese language file is added to the plugin.
+* Update : The French language file is updated.
+* Bugfix : The performance issue was fixed.
+* Update : We added padding style for captcha input.
+
 = V4.0.5 - 15.10.2014 =
 * Update : The Brazilian Portuguese language file is updated.
 * NEW: We added filter 'cptch_forms_list' in the plugin settings page.
@@ -190,7 +197,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Update : We updated all functionality for wordpress 4.0.
 
 = V4.0.3 - 07.08.2014 =
-* Budfix : Security Exploit was fixed.
+* Bugfix : Security Exploit was fixed.
 
 = V4.0.2 - 28.07.2014 =
 * Update : We updated all functionality for Limit Attempts plugin.
@@ -210,7 +217,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Bugfix : We fixed error related to custom plugins folder.
 
 = V3.9.7 - 10.03.2014 =
-* Budfix : Plugin optimization is done.
+* Bugfix : Plugin optimization is done.
 * Update : The French language file is updated.
 
 = V3.9.6 - 12.02.2014 =
@@ -485,6 +492,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Select functionality of mathematical actions and level of their difficulty are implemented.
 
 == Upgrade Notice ==
+
+= V4.0.6 =
+The Portuguese language file is added to the plugin. The French language file is updated. The performance issue was fixed. We added padding style for captcha input.
 
 = V4.0.5 =
 The Brazilian Portuguese language file is updated. We added filter 'cptch_forms_list' in the plugin settings page.
