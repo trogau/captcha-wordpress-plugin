@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=1&product_id=94
 Tags: add, antispam, anti-spam, anti-spam security, arithmetic actions, capcha, captcha, captha, catcha, cpatcha, captcha numbers, captcha plugin, captcha words, contact form with captcha, comment,  label, login, lost password, match captcha, math actions, multiply, registration, security, spam, spam protection, substract, text captcha, web form protection
 Requires at least: 3.1
-Tested up to: 4.0
-Stable tag: 4.0.6
+Tested up to: 4.0.1
+Stable tag: 4.0.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -181,6 +181,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 6. Contact form with Captcha.
 
 == Changelog ==
+
+= V4.0.7 - 27.11.2014 =
+* Bugfix : Security Vulnerability was fixed.
+* Bugfix : The bug with error message on multisite is fixed.
 
 = V4.0.6 - 17.11.2014 =
 * NEW : The Portuguese language file is added to the plugin.
@@ -492,6 +496,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Select functionality of mathematical actions and level of their difficulty are implemented.
 
 == Upgrade Notice ==
+
+= V4.0.7 =
+Security Vulnerability was fixed. The bug with error message on multisite is fixed.
 
 = V4.0.6 =
 The Portuguese language file is added to the plugin. The French language file is updated. The performance issue was fixed. We added padding style for captcha input.

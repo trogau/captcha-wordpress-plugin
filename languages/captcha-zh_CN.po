@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: captcha\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-11 11:17+0300\n"
-"PO-Revision-Date: 2014-04-11 11:17+0300\n"
-"Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
+"PO-Revision-Date: 2014-11-19 17:18+0800\n"
+"Last-Translator: leo <441968345@qq.com>\n"
 "Language-Team: billyjeans <billyjeans@gmail.com>\n"
 "Language: cn\n"
 "MIME-Version: 1.0\n"
@@ -19,30 +19,28 @@ msgstr ""
 
 #: captcha.php:72
 #: captcha.php:403
-#, fuzzy
 msgid "Captcha Settings"
-msgstr "验证问答选项"
+msgstr "Captcha设置"
 
 #: captcha.php:72
 msgid "Captcha"
-msgstr "验证文档"
+msgstr "Captcha设置"
 
 #: captcha.php:160
 msgid "requires"
-msgstr ""
+msgstr "要求"
 
 #: captcha.php:160
 msgid "or higher, that is why it has been deactivated! Please upgrade WordPress and try again."
-msgstr ""
+msgstr "或者更高版本，因此插件被禁用！请升级wordpress然后再次尝试"
 
 #: captcha.php:160
 msgid "Back to the WordPress"
-msgstr ""
+msgstr "回到wordpress页面"
 
 #: captcha.php:160
-#, fuzzy
 msgid "Plugins page"
-msgstr "BWS Plugins"
+msgstr "插件页面"
 
 #: captcha.php:233
 msgid "Login form"
@@ -50,18 +48,16 @@ msgstr "登录"
 
 #: captcha.php:234
 #: captcha.php:448
-#, fuzzy
 msgid "Registration form"
-msgstr "注册"
+msgstr "注册表单"
 
 #: captcha.php:234
 msgid "Register form"
 msgstr "注册"
 
 #: captcha.php:235
-#, fuzzy
 msgid "Reset Password form"
-msgstr "丢失密码"
+msgstr "重置密码表单"
 
 #: captcha.php:235
 msgid "Lost password form"
@@ -116,27 +112,26 @@ msgid "Please select one item in the block Arithmetic and Complexity for CAPTCHA
 msgstr "请选择一组数学运算操作和验证问答难度"
 
 #: captcha.php:285
-#, fuzzy
 msgid "Settings saved."
-msgstr "选项保存成功"
+msgstr "设置保存成功"
 
 #: captcha.php:298
 #: captcha.php:336
 msgid "Wrong license key"
-msgstr ""
+msgstr "验证码不正确"
 
 #: captcha.php:329
 msgid "Something went wrong. Try again later. If the error will appear again, please, contact us <a href=http://support.bestwebsoft.com>BestWebSoft</a>. We are sorry for inconvenience."
-msgstr ""
+msgstr "出现问题，请稍后尝试. 如果一再出现错误，请联系我们<a href=http://support.bestwebsoft.com>BestWebSoft</a>. 抱歉给您带来的不便"
 
 #: captcha.php:338
 msgid "This license key is bind to another site"
-msgstr ""
+msgstr "这个license key对应另外一个网站"
 
 #: captcha.php:340
 #: captcha.php:568
 msgid "Unfortunately, you have exceeded the number of available tries per day. Please, upload the plugin manually."
-msgstr ""
+msgstr "很遗憾，你已达每日尝试次数上限，请手动上传插件"
 
 #: captcha.php:357
 msgid "Failed to open the zip archive. Please, upload the plugin manually"
@@ -153,11 +148,11 @@ msgstr ""
 
 #: captcha.php:380
 msgid "Something went wrong. Try again later or upload the plugin manually. We are sorry for inconvienience."
-msgstr ""
+msgstr "出现错误，请稍后尝试或者手动上传插件。抱歉带来的不便"
 
 #: captcha.php:395
 msgid "Please, enter Your license key"
-msgstr ""
+msgstr "请输入你的license key"
 
 #: captcha.php:405
 #: captcha.php:1414
@@ -167,21 +162,20 @@ msgstr "设置"
 
 #: captcha.php:406
 msgid "Go PRO"
-msgstr ""
+msgstr "收费版"
 
 #: captcha.php:408
 msgid "Notice:"
-msgstr ""
+msgstr "注意："
 
 #: captcha.php:408
 msgid "The plugin's settings have been changed. In order to save them please don't forget to click the 'Save Changes' button."
-msgstr ""
+msgstr "插件设置已更改。如果要保存更改，别忘了点击 '保存更改' 按钮."
 
 #: captcha.php:415
 #: captcha.php:445
-#, fuzzy
 msgid "Enable CAPTCHA for:"
-msgstr "对以下内容要求验证问答："
+msgstr "对以下内容开启验证问答："
 
 #: captcha.php:427
 #: captcha.php:429
@@ -193,7 +187,7 @@ msgstr "联系"
 #: captcha.php:429
 #: captcha.php:432
 msgid "powered by"
-msgstr ""
+msgstr "驱动于"
 
 #: captcha.php:429
 msgid "Activate contact form"
@@ -204,44 +198,41 @@ msgid "Download contact form"
 msgstr "下载插件Contact Form"
 
 #: captcha.php:434
-#, fuzzy
 msgid "If you would like to customize this plugin for a custom form, please see"
-msgstr "如果您喜欢定制Custom Form插件，请联系<a href=\"Mailto:plugin@bestwebsoft.com\">plugin@bestwebsoft.com</a>，或在我们的网站填写联系信息"
+msgstr "如果您想定制这个插件，请联系<a href=\"Mailto:plugin@bestwebsoft.com\">plugin@bestwebsoft.com</a>，或在我们的网站填写联系信息"
 
 #: captcha.php:450
 msgid "\"Create a Group\" form"
-msgstr ""
+msgstr "\"Create a Group\" 表单"
 
 #: captcha.php:456
-#, fuzzy
 msgid "Enable CAPTCHA:"
-msgstr "对以下内容要求验证问答："
+msgstr "对以下内容开启验证问答："
 
 #: captcha.php:464
 msgid "If you upgrade to Pro version all your settings will be saved."
-msgstr ""
+msgstr "如果升级到付费版本，所有设置都会保存"
 
 #: captcha.php:471
 msgid "Unlock premium options by upgrading to a PRO version."
-msgstr ""
+msgstr "升级到付费版本解锁这些高级功能"
 
 #: captcha.php:472
 #: captcha.php:1487
 msgid "Learn More"
-msgstr ""
+msgstr "了解详情"
 
 #: captcha.php:475
 msgid "Go"
-msgstr ""
+msgstr "确认"
 
 #: captcha.php:482
-#, fuzzy
 msgid "Title for CAPTCHA in the form"
-msgstr "验证问答的标签"
+msgstr "验证问答表单的标签"
 
 #: captcha.php:486
 msgid "Required symbol"
-msgstr ""
+msgstr "必填符号"
 
 #: captcha.php:492
 msgid "Arithmetic actions for CAPTCHA"
@@ -249,7 +240,7 @@ msgstr "验证问答的数学操作"
 
 #: captcha.php:506
 msgid "CAPTCHA complexity level"
-msgstr ""
+msgstr "CAPTCHA 复杂级别"
 
 #: captcha.php:522
 msgid "Save Changes"
@@ -257,16 +248,15 @@ msgstr "保存更改"
 
 #: captcha.php:528
 msgid "If you enjoy our plugin, please give it 5 stars on WordPress"
-msgstr ""
+msgstr "如果你喜欢这个插件，请在wordpress网站上给我们好评哦"
 
 #: captcha.php:529
-#, fuzzy
 msgid "Rate the plugin"
-msgstr "推荐插件"
+msgstr "评价插件"
 
 #: captcha.php:532
 msgid "If there is something wrong about it, please contact us"
-msgstr ""
+msgstr "如果发现错误，请联系我们"
 
 #: captcha.php:543
 msgid "Congratulations! The PRO version of the plugin is successfully download and activated."
@@ -282,11 +272,11 @@ msgstr ""
 
 #: captcha.php:546
 msgid "You will be redirected automatically in 5 seconds."
-msgstr ""
+msgstr "5秒后将会自动跳转"
 
 #: captcha.php:551
 msgid "You can download and activate"
-msgstr ""
+msgstr "你可以下载和启用"
 
 #: captcha.php:553
 msgid "version of this plugin by entering Your license key."
@@ -323,9 +313,8 @@ msgstr ""
 
 #: captcha.php:773
 #: captcha.php:866
-#, fuzzy
 msgid "Error: You have entered an incorrect CAPTCHA value. Click the BACK button on your browser, and try again."
-msgstr "错误：您输入的验证问答不正确，请按浏览器的返回按键返回，并重新尝试"
+msgstr "错误：您输入的验证码不正确，请按浏览器的返回按键返回，并重新尝试"
 
 #: captcha.php:806
 #: captcha.php:814
@@ -336,9 +325,8 @@ msgstr "错误"
 
 #: captcha.php:814
 #: captcha.php:837
-#, fuzzy
 msgid "Please enter a valid CAPTCHA value."
-msgstr "请您输入验证问答"
+msgstr "请您输入正确的验证码"
 
 #: captcha.php:885
 #: captcha.php:1184
@@ -491,9 +479,8 @@ msgid "and"
 msgstr "和"
 
 #: captcha.php:1078
-#, fuzzy
 msgid "Encryption password is not set"
-msgstr "未设置解密的密码"
+msgstr "未设置加密的密码"
 
 #: captcha.php:1098
 #, fuzzy
