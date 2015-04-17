@@ -725,7 +725,7 @@ if ( ! function_exists( 'cptch_display_captcha' ) ) {
 			cptch_generate_key();
 		$str_key = $cptch_options['cptch_str_key']['key'];
 		
-		/* trog */
+		/* trog - use images instead of text numbers */
 		/* In letters presentation of numbers 0-9 */
 		$number_string          =       array(); 
 		$number_string[0] = __( '<img src="/wp-content/plugins/captcha/zero.png" style="vertical-align:middle">', 'captcha' );
