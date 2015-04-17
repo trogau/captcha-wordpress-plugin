@@ -728,40 +728,40 @@ if ( ! function_exists( 'cptch_display_captcha' ) ) {
 		/* trog - use images instead of text numbers */
 		/* In letters presentation of numbers 0-9 */
 		$number_string          =       array(); 
-		$number_string[0] = __( '<img src="/wp-content/plugins/captcha/zero.png" style="vertical-align:middle">', 'captcha' );
-		$number_string[1] = __( '<img src="/wp-content/plugins/captcha/one.png" style="vertical-align:middle">', 'captcha' );
-		$number_string[2] = __( '<img src="/wp-content/plugins/captcha/two.png" style="vertical-align:middle">', 'captcha' );
-		$number_string[3] = __( '<img src="/wp-content/plugins/captcha/three.png" style="vertical-align:middle">', 'captcha' );
-		$number_string[4] = __( '<img src="/wp-content/plugins/captcha/four.png" style="vertical-align:middle">', 'captcha' );
-		$number_string[5] = __( '<img src="/wp-content/plugins/captcha/five.png" style="vertical-align:middle">', 'captcha' );
-		$number_string[6] = __( '<img src="/wp-content/plugins/captcha/six.png" style="vertical-align:middle">', 'captcha' );
-		$number_string[7] = __( '<img src="/wp-content/plugins/captcha/seven.png" style="vertical-align:middle">', 'captcha' );
-		$number_string[8] = __( '<img src="/wp-content/plugins/captcha/eight.png" style="vertical-align:middle">', 'captcha' );
-		$number_string[9] = __( '<img src="/wp-content/plugins/captcha/nine.png" style="vertical-align:middle">', 'captcha' ); 
+		$number_string[0] = __( '<img src="/wp-content/plugins/captcha-img/zero.png" style="vertical-align:middle">', 'captcha' );
+		$number_string[1] = __( '<img src="/wp-content/plugins/captcha-img/one.png" style="vertical-align:middle">', 'captcha' );
+		$number_string[2] = __( '<img src="/wp-content/plugins/captcha-img/two.png" style="vertical-align:middle">', 'captcha' );
+		$number_string[3] = __( '<img src="/wp-content/plugins/captcha-img/three.png" style="vertical-align:middle">', 'captcha' );
+		$number_string[4] = __( '<img src="/wp-content/plugins/captcha-img/four.png" style="vertical-align:middle">', 'captcha' );
+		$number_string[5] = __( '<img src="/wp-content/plugins/captcha-img/five.png" style="vertical-align:middle">', 'captcha' );
+		$number_string[6] = __( '<img src="/wp-content/plugins/captcha-img/six.png" style="vertical-align:middle">', 'captcha' );
+		$number_string[7] = __( '<img src="/wp-content/plugins/captcha-img/seven.png" style="vertical-align:middle">', 'captcha' );
+		$number_string[8] = __( '<img src="/wp-content/plugins/captcha-img/eight.png" style="vertical-align:middle">', 'captcha' );
+		$number_string[9] = __( '<img src="/wp-content/plugins/captcha-img/nine.png" style="vertical-align:middle">', 'captcha' ); 
 
 		/* In letters presentation of numbers 11 -19 */
 		$number_two_string              =       array();
-		$number_two_string[1] = __( '<img src="/wp-content/plugins/captcha/eleven.png" style="vertical-align:middle">', 'captcha' );
-		$number_two_string[2] = __( '<img src="/wp-content/plugins/captcha/twelve.png" style="vertical-align:middle">', 'captcha' );
-		$number_two_string[3] = __( '<img src="/wp-content/plugins/captcha/thirteen.png" style="vertical-align:middle">', 'captcha' );
-		$number_two_string[4] = __( '<img src="/wp-content/plugins/captcha/fourteen.png" style="vertical-align:middle">', 'captcha' );
-		$number_two_string[5] = __( '<img src="/wp-content/plugins/captcha/fifteen.png" style="vertical-align:middle">', 'captcha' );
-		$number_two_string[6] = __( '<img src="/wp-content/plugins/captcha/sixteen.png" style="vertical-align:middle">', 'captcha' );
-		$number_two_string[7] = __( '<img src="/wp-content/plugins/captcha/seventeen.png" style="vertical-align:middle">', 'captcha' );
-		$number_two_string[8] = __( '<img src="/wp-content/plugins/captcha/eighteen.png" style="vertical-align:middle">', 'captcha' );
-		$number_two_string[9] = __( '<img src="/wp-content/plugins/captcha/nineteen.png" style="vertical-align:middle">', 'captcha' );
+		$number_two_string[1] = __( '<img src="/wp-content/plugins/captcha-img/eleven.png" style="vertical-align:middle">', 'captcha' );
+		$number_two_string[2] = __( '<img src="/wp-content/plugins/captcha-img/twelve.png" style="vertical-align:middle">', 'captcha' );
+		$number_two_string[3] = __( '<img src="/wp-content/plugins/captcha-img/thirteen.png" style="vertical-align:middle">', 'captcha' );
+		$number_two_string[4] = __( '<img src="/wp-content/plugins/captcha-img/fourteen.png" style="vertical-align:middle">', 'captcha' );
+		$number_two_string[5] = __( '<img src="/wp-content/plugins/captcha-img/fifteen.png" style="vertical-align:middle">', 'captcha' );
+		$number_two_string[6] = __( '<img src="/wp-content/plugins/captcha-img/sixteen.png" style="vertical-align:middle">', 'captcha' );
+		$number_two_string[7] = __( '<img src="/wp-content/plugins/captcha-img/seventeen.png" style="vertical-align:middle">', 'captcha' );
+		$number_two_string[8] = __( '<img src="/wp-content/plugins/captcha-img/eighteen.png" style="vertical-align:middle">', 'captcha' );
+		$number_two_string[9] = __( '<img src="/wp-content/plugins/captcha-img/nineteen.png" style="vertical-align:middle">', 'captcha' );
 
 		/* In letters presentation of numbers 10, 20, 30, 40, 50, 60, 70, 80, 90 */
 		$number_three_string    =       array();
-		$number_three_string[1] = __( '<img src="/wp-content/plugins/captcha/ten.png" style="vertical-align:middle">', 'captcha' );
-		$number_three_string[2] = __( '<img src="/wp-content/plugins/captcha/twenty.png" style="vertical-align:middle">', 'captcha' );
-		$number_three_string[3] = __( '<img src="/wp-content/plugins/captcha/thirty.png" style="vertical-align:middle">', 'captcha' );
-		$number_three_string[4] = __( '<img src="/wp-content/plugins/captcha/forty.png" style="vertical-align:middle">', 'captcha' );
-		$number_three_string[5] = __( '<img src="/wp-content/plugins/captcha/fifty.png" style="vertical-align:middle">', 'captcha' );
-		$number_three_string[6] = __( '<img src="/wp-content/plugins/captcha/sixty.png" style="vertical-align:middle">', 'captcha' );
-		$number_three_string[7] = __( '<img src="/wp-content/plugins/captcha/seventy.png" style="vertical-align:middle">', 'captcha' );
-		$number_three_string[8] = __( '<img src="/wp-content/plugins/captcha/eighty.png" style="vertical-align:middle">', 'captcha' );
-		$number_three_string[9] = __( '<img src="/wp-content/plugins/captcha/ninety.png" style="vertical-align:middle">', 'captcha' );
+		$number_three_string[1] = __( '<img src="/wp-content/plugins/captcha-img/ten.png" style="vertical-align:middle">', 'captcha' );
+		$number_three_string[2] = __( '<img src="/wp-content/plugins/captcha-img/twenty.png" style="vertical-align:middle">', 'captcha' );
+		$number_three_string[3] = __( '<img src="/wp-content/plugins/captcha-img/thirty.png" style="vertical-align:middle">', 'captcha' );
+		$number_three_string[4] = __( '<img src="/wp-content/plugins/captcha-img/forty.png" style="vertical-align:middle">', 'captcha' );
+		$number_three_string[5] = __( '<img src="/wp-content/plugins/captcha-img/fifty.png" style="vertical-align:middle">', 'captcha' );
+		$number_three_string[6] = __( '<img src="/wp-content/plugins/captcha-img/sixty.png" style="vertical-align:middle">', 'captcha' );
+		$number_three_string[7] = __( '<img src="/wp-content/plugins/captcha-img/seventy.png" style="vertical-align:middle">', 'captcha' );
+		$number_three_string[8] = __( '<img src="/wp-content/plugins/captcha-img/eighty.png" style="vertical-align:middle">', 'captcha' );
+		$number_three_string[9] = __( '<img src="/wp-content/plugins/captcha-img/ninety.png" style="vertical-align:middle">', 'captcha' );
 
 
 		/* The array of math actions */
