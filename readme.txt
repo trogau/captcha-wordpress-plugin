@@ -1,10 +1,10 @@
 === Captcha by BestWebSoft ===
 Contributors: bestwebsoft
-Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=1&product_id=94
+Donate link: http://bestwebsoft.com/donate/
 Tags: add, antispam, anti-spam, anti-spam security, arithmetic actions, capcha, captcha, captha, catcha, cpatcha, captcha numbers, captcha plugin, captcha words, contact form with captcha, comment,  label, login, lost password, match captcha, math actions, multiply, registration, security, spam, spam protection, substract, text captcha, web form protection
 Requires at least: 3.1
-Tested up to: 4.2.1
-Stable tag: 4.1.1
+Tested up to: 4.2.2
+Stable tag: 4.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -185,6 +185,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 6. Contact form with Captcha.
 
 == Changelog ==
+
+= V4.1.2 - 02.06.2015 =
+* Bugfix : We fixed error of a visual display of the settings page.
+* Bugfix : We fixed the Required symbol that has not been displayed on login, registration and password recovery form.
 
 = V4.1.1 - 04.05.2015 =
 * Update : We updated all functionality for wordpress 4.2.1.
@@ -514,6 +518,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Select functionality of mathematical actions and level of their difficulty are implemented.
 
 == Upgrade Notice ==
+
+= V4.1.2 =
+We fixed error of a visual display of the settings page. We fixed the Required symbol that has not been displayed on login, registration and password recovery form.
 
 = V4.1.1 =
 We updated all functionality for wordpress 4.2.1.

@@ -1,16 +1,16 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: captcha\n"
+"Project-Id-Version: captcha 4.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-20 12:28+0300\n"
-"PO-Revision-Date: 2015-03-20 12:28+0300\n"
+"POT-Creation-Date: 2015-06-01 11:25+0300\n"
+"PO-Revision-Date: 2015-06-01 11:25+0300\n"
 "Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
 "Language-Team: Luc Capronnier <lcapronnier@yahoo.com>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-KeywordsList: __;_e;_n\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Generator: Poedit 1.5.7\n"
@@ -236,7 +236,7 @@ msgstr "Erreur"
 #: captcha.php:590
 #: captcha.php:706
 msgid "Click the BACK button on your browser, and try again."
-msgstr "Vous avez saisi un mauvais CAPTCHA. Appuyez sur le bouton retour de votre navigateur et essayez de nouveau."
+msgstr "Appuyez sur le bouton retour de votre navigateur et essayez de nouveau."
 
 #: captcha.php:730
 #: captcha.php:1032
@@ -416,17 +416,44 @@ msgstr "Support"
 #~ msgid "Plugins page"
 #~ msgstr "Page des extensions"
 
+#~ msgid "It’s time to upgrade your"
+#~ msgstr "C'est le moment de mettre à jour votre "
+
+#~ msgid "to"
+#~ msgstr "à"
+
+#~ msgid "version!"
+#~ msgstr "version"
+
+#~ msgid "Extend standard plugin functionality with new great options."
+#~ msgstr ""
+#~ "Etend les fonctionalités classiques de l'extension avec des nouvelles "
+#~ "options."
+
+#~ msgid "If you enjoy our plugin, please give it 5 stars on WordPress"
+#~ msgstr ""
+#~ "Si notre extension vous satisfait, merci de la notée avec 5 étoiles dans "
+#~ "Wordpress"
+
+#~ msgid "Rate the plugin"
+#~ msgstr "Voter pour l'extension"
+
+#~ msgid "If there is something wrong about it, please contact us"
+#~ msgstr "Si vous avez une question, n'hésitez pas à nous contacter"
+
 #~ msgid "Wrong license key"
 #~ msgstr "Clé de licence incorrecte"
 
 #~ msgid ""
-#~ "Something went wrong. Try again later. If the error will appear again, "
-#~ "please, contact us <a href=http://support.bestwebsoft.com>BestWebSoft</"
-#~ "a>. We are sorry for inconvenience."
+#~ "Something went wrong. Please try again later. If the error appears again, "
+#~ "please contact us"
 #~ msgstr ""
 #~ "Il est survenu une erreur. Essayer de nouveau. Si l'erreur se produit de "
 #~ "nouveau, merci de contacter <a href=http://support.bestwebsoft."
 #~ "com>BestWebSoft</a>. Nous sommes désolés pour le désagrément."
+
+#~ msgid "We are sorry for inconvenience."
+#~ msgstr "Nous sommes désolés pour le désagrément."
 
 #~ msgid "This license key is bind to another site"
 #~ msgstr "La clé de licence correspond à un autre site."
@@ -437,6 +464,21 @@ msgstr "Support"
 #~ msgstr ""
 #~ "Désoler mais vous avez dépassé le nombre d'essai de la journée. Merci de "
 #~ "télécharger l'extension manuellement."
+
+#~ msgid ""
+#~ "Unfortunately, Your license has expired. To continue getting top-priority "
+#~ "support and plugin updates you should extend it in your"
+#~ msgstr ""
+#~ "Désoler, votre licence est terminée. Pour continuer à disposer du support "
+#~ "rapide et des mises à jour de l'extension vous devez la renouveller dans "
+#~ "votre"
+
+#~ msgid ""
+#~ "Unfortunately, the PRO licence was already installed to this domain. The "
+#~ "PRO Trial license can be installed only once."
+#~ msgstr ""
+#~ "Une licence a déjà été installée sur ce domaine. La licence d'évaluation "
+#~ "ne peut-être installée qu'une seule fois."
 
 #~ msgid ""
 #~ "Failed to download the zip archive. Please, upload the plugin manually"
@@ -469,18 +511,7 @@ msgstr "Support"
 #~ "l'extension manuellement.Nous sommes désolés pour le désagrément."
 
 #~ msgid "Please, enter Your license key"
-#~ msgstr "Merci de saisir votre clé de liecence"
-
-#~ msgid "If you enjoy our plugin, please give it 5 stars on WordPress"
-#~ msgstr ""
-#~ "Si notre extension vous satisfait, merci de la notée avec 5 étoiles dans "
-#~ "Wordpress"
-
-#~ msgid "Rate the plugin"
-#~ msgstr "Voter pour l'extension"
-
-#~ msgid "If there is something wrong about it, please contact us"
-#~ msgstr "Si vous avez une question, n'hésitez pas à nous contacter par "
+#~ msgstr "Merci de saisir votre clé de licence"
 
 #~ msgid ""
 #~ "Congratulations! The PRO version of the plugin is successfully download "
@@ -517,20 +548,91 @@ msgstr "Support"
 #~ "(votre nom d'utilisateur est l'adresse e-mail que vous avez donné lors de "
 #~ "l'achat de l'extension)."
 
-#~ msgid "Go!"
-#~ msgstr "Allez!"
+#~ msgid "Activate"
+#~ msgstr "Activer"
 
 #~ msgid ""
-#~ "It's time to upgrade your <strong>Captcha plugin</strong> to <strong>PRO</"
-#~ "strong> version"
+#~ "This license key is valid, but Your license has expired. If you want to "
+#~ "update our plugin in future, you should extend the license."
 #~ msgstr ""
-#~ "Il est peut-être nécessaiire de faire évoluer votre extension "
-#~ "<strong>Captcha</strong> vers la version <strong>PRO</strong>"
+#~ "La clé de licence est valide mais votre durée de validité est passée. "
+#~ "Pour continuer à disposer du support rapide et des mises à jour de "
+#~ "l'extension vous devez la renouveller."
 
-#~ msgid "Extend standard plugin functionality with new great options"
+#~ msgid "Unfortunately, you have exceeded the number of available tries."
 #~ msgstr ""
-#~ "Etend les fonctionalités classiques de l'extension avec des nouvelles "
-#~ "options"
+#~ "Désoler mais vous avez dépassé le nombre d'essai de la journée. Merci de "
+#~ "télécharger l'extension manuellement."
+
+#~ msgid "The license key is valid. Your license will expire on"
+#~ msgstr "La clé de licence est valide. Votre licence se termine le "
+
+#~ msgid "The license key is valid."
+#~ msgstr "La clé de licence est valide."
+
+#~ msgid "Please, enter your license key"
+#~ msgstr "Merci de saisir votre clé de liecence"
+
+#~ msgid ""
+#~ "If needed you can check if the license key is correct or reenter it in "
+#~ "the field below. You can find your license key on your personal page - "
+#~ "Client area - on our website"
+#~ msgstr ""
+#~ "Si nécessaire vous pouvez vérifier que la clé de licence est correcte ou "
+#~ "la saisir de nouveau dans le champ ci-dessous. Vous pouvez trouver votre "
+#~ "clé de licence sur votre page personnelle (zone client) sur notre site "
+#~ "web."
+
+#~ msgid ""
+#~ "(your username is the email you specify when purchasing the product). If "
+#~ "necessary, please submit \"Lost your password?\" request."
+#~ msgstr ""
+#~ "(votre nom d'utilisateur est l'adresse e-mail que vous avez donné lors de "
+#~ "l'achat de l'extension). Si nécessaire, utilisez la fonction de demande "
+#~ "de mot de passe perdu."
+
+#~ msgid "Check license key"
+#~ msgstr "Vérifier la clé de licence"
+
+#~ msgid ""
+#~ "WARNING: We have noticed illegal use of our plugin by you. We strongly "
+#~ "recommend you to solve the problem within 24 hours, otherwise the plugin "
+#~ "will be deactivated. Please go to your personal"
+#~ msgstr ""
+#~ "AVERTISSEMENT : Nous avons détecté une utilisation abusive de notre "
+#~ "extension. Nous vous recommandons de résoudre ce problème dans les 24 "
+#~ "heures, sinon l'extension sera rendue inactive. Merci de vous rendre dans "
+#~ "votre espace personel"
+
+#~ msgid ""
+#~ "(your username is the email you specify when purchasing the product), "
+#~ "where you can make the necessary changes."
+#~ msgstr ""
+#~ "(votre nom d'utilisateur est l'adresse e-mail que vous avez donné lors de "
+#~ "l'achat de l'extension), où vous pourrez faire les modifications "
+#~ "nécessaires."
+
+#~ msgid ""
+#~ "Your license has expired. To continue getting top-priority support and "
+#~ "plugin updates you should extend it."
+#~ msgstr ""
+#~ "Votre licence est terminée. Pour continuer à disposer du support rapide "
+#~ "et des mises à jour de l'extension vous devez la renouveller."
+
+#~ msgid "Learn more"
+#~ msgstr "En savoir plus"
+
+#~ msgid "You license for"
+#~ msgstr "Votre licence pour"
+
+#~ msgid "expires on"
+#~ msgstr "se termine le"
+
+#~ msgid "and you won't be granted TOP-PRIORITY SUPPORT or UPDATES."
+#~ msgstr "et vous ne diposerez plus du support rapide et des mises à jour."
+
+#~ msgid "Close"
+#~ msgstr "Fermer"
 
 #~ msgid "Not set"
 #~ msgstr "Non défini"
@@ -655,14 +757,8 @@ msgstr "Support"
 #~ msgid "Installed plugins"
 #~ msgstr "Extensions installées"
 
-#~ msgid "Learn more"
-#~ msgstr "En savoir plus"
-
 #~ msgid "Activate this plugin"
 #~ msgstr "Activer cette extension"
-
-#~ msgid "Activate"
-#~ msgstr "Activer"
 
 #~ msgid "DONATE"
 #~ msgstr "Faire un don"
@@ -721,17 +817,27 @@ msgstr "Support"
 #~ msgid "Send to custom email &#187;"
 #~ msgstr "Envoyer à un e-mail spécifique &#187;"
 
+#~ msgid "Go!"
+#~ msgstr "Allez!"
+
 #~ msgid "<strong>ERROR</strong>: Please fill the form."
 #~ msgstr "<strong>ERREUR</strong> : Merci de remplir le formulaire."
 
 #~ msgid "<strong>ERROR</strong>: Please enter a valid CAPTCHA value."
 #~ msgstr "<strong>ERREUR</strong> : Merci de compléter le CAPTCHA."
 
-#~ msgid "<strong>ERROR</strong>: Please enter a CAPTCHA value."
-#~ msgstr "<strong>ERREUR</strong> : Merci de compléter le CAPTCHA."
-
 #~ msgid "Please fill the form."
 #~ msgstr "Merci de remplir le formulaire."
+
+#~ msgid ""
+#~ "It's time to upgrade your <strong>Captcha plugin</strong> to <strong>PRO</"
+#~ "strong> version"
+#~ msgstr ""
+#~ "Il est peut-être nécessaiire de faire évoluer votre extension "
+#~ "<strong>Captcha</strong> vers la version <strong>PRO</strong>"
+
+#~ msgid "<strong>ERROR</strong>: Please enter a CAPTCHA value."
+#~ msgstr "<strong>ERREUR</strong> : Merci de compléter le CAPTCHA."
 
 #~ msgid ""
 #~ "This functionality is available in the Pro version of the plugin. For "
@@ -787,15 +893,6 @@ msgstr "Support"
 
 #~ msgid "Switch to old interface"
 #~ msgstr "Basculer vers l'ancienne interface"
-
-#~ msgid "It's time to upgrade your"
-#~ msgstr "C'est le moment de mettre à jour votre "
-
-#~ msgid "to"
-#~ msgstr "à"
-
-#~ msgid "version"
-#~ msgstr "version"
 
 #~ msgid "(powered by bestwebsoft.com)"
 #~ msgstr "(fourni par bestwebsoft.com)"
