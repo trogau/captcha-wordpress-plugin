@@ -3,10 +3,10 @@
 Plugin Name: Captcha-img
 Plugin URI: http://bestwebsoft.com/products/
 Description: Plugin Captcha intended to prove that the visitor is a human being and not a spam robot. Plugin asks the visitor to answer a math question.
-Author: BestWebSoft
+Author: BestWebSoft, trogau
 Text Domain: captcha
 Domain Path: /languages
-Version: 4.1.5
+Version: 4.1.5.1
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
